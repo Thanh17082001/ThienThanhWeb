@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/base.css">
+    <link rel="stylesheet" href="asset/css/homepage.css">
+    <link rel="stylesheet" href="asset/css/grid.css">
+    <link rel="stylesheet" href="asset/css/layout.css">
+    <link rel="stylesheet" href="asset/css/cart.css">
+    <link rel="stylesheet" href="./cart.html">
+    <link rel="stylesheet" href="asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>The Cake</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__tophead">
+            <div class="grid wide">
+                <div class="tophead__container">
+                    <div class="tophead__contact">
+                        <span class="contact__HL">Hotline:</span>
+                        <span class="contact__numberphone">00112233</span>
+                    </div>
+                    <div class="tophead__list">
+                        <div class="tophead__search">
+                            <input type="text" placeholder="Tìm kiếm sản phẩm" class="search__input">
+                            <button class="search__btn">
+                                <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                            </button>
+                        </div>
+                        <div class="tophead__account">
+                            <a href="" class="account__login">Đăng nhập</a>
+                            <span class="account__and">&</span>
+                            <a href="" class="account__register">Đăng kí</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__midhead">
+            <div class="grid wide">
+                <div class="midhead__container">
+                    <img src="./asset/images/Logo.jpg" alt="" class="midhead__img">
+                    <nav class="midhead__nav">
+                        <ul class="midhead__list">
+                            <li class="midhead__item">
+                                <a href="" class="midhead__link">
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="midhead__item">
+                                <a href="" class="midhead__link product__hover">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                    Sản phẩm
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="item__small">
+                                    <li class="item__small-list">
+                                        <a href="" class="item__small-link">Món ăn nổi bật</a>
+                                    </li>
+                                    <li class="item__small-list">
+                                        <a href="" class="item__small-link ">
+                                            Món ăn ưa chuộng
+                                        </a>
+                                    </li>
+                                    <li class="item__small-list">
+                                        <a href="" class="item__small-link">Món ăn mới</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="midhead__item">
+                                <a href="" class="midhead__link">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    Giới thiệu
+                                </a>
+                            </li>
+                           
+                            <li class="midhead__item">
+                                <a href="" class="midhead__link">
+                                    <i class="fa-solid fa-phone"></i>
+                                    Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                     <div class="midhead__cart">
+                        <a href="./cart.html" class="cart__link">
+                            <i class="fa-solid fa-cart-shopping cart__icon"></i>
+                        </a>
+                        <span class="cart__count">0</span>
+                        
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__bottomhead">
+            <img src="./asset/images/bottomhead.jpg" alt="" class="bottomhead__img">
+        </div>
+    </header>
+
+    <!-- phan body -->
+    <main class="main">
+        <div class="grid wide">
+            <!-- San pham noi bat -->
+            <section class="prominent">
+                <div class="prominent__title">
+                        <h2 class="prominent__headding">
+                            <a href="" class="prominent__headding-link">Món ăn nổi bật</a>
+                        </h2>
+                </div>
+                       
+                <div class="prominent__hide">
+                    <div class="prominent__roll">
+                        <div class="row row-nowrap">
+                            <div class="col l-4">
+                                <div class="prominent__product prominent__exception " id="form__1">
+                                    <div class="product__overlay">
+                                        <!-- lop phu anh -->
+                                    </div>
+                                    <div class="product__thumbnail">
+                                        
+                                        <a href="" class="product__link">
+                                            <img src="./asset/images/product1.jpg" alt="" class="product__img">
+                                        </a>
+                                    
+                
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="info__id">1</p>
+                                        <p class="info__name">
+                                             Lamington
+                                        </p>
+                                        <p class="info__price">
+                                            300.000đ
+                                        </p>
+                                        <div class="product__buy">
+                                            <input type="number" class="product__input" value="0">
+                                            <button class="product__btn" >Đặt hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4">
+                                <div class="prominent__product prominent__exception ">
+                                    <div class="product__overlay">
+                                        <!-- lop phu anh -->
+                                    </div>
+                                    <div class="product__thumbnail">
+                                        
+                                        <a href="" class="product__link">
+                                            <img src="./asset/images/product2.jpg" alt="" class="product__img">
+                                        </a>
+                                    
+
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="info__id">2</p>
+                                        <p class="info__name">
+                                             Lamington
+                                        </p>
+                                        <p class="info__price">
+                                            300.000đ
+                                        </p>
+                                        <div class="product__buy">
+                                            <input type="number" min="0" class="product__input" value="0">
+                                            <button class="product__btn">Đặt hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4">
+                                <div class="prominent__product prominent__exception">
+                                    <div class="product__overlay">
+                                        <!-- lop phu anh -->
+                                    </div>
+                                    <div class="product__thumbnail">
+                                        
+                                        <a href="" class="product__link">
+                                            <img src="./asset/images/product3.jpg" alt="" class="product__img">
+                                        </a>
+                                    
+                                       
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="info__id">3</p>
+                                        <p class="info__name">
+                                             Lamington
+                                        </p>
+                                        <p class="info__price">
+                                            300.000đ
+                                        </p>
+                                        <div class="product__buy">
+                                            <input type="number" class="product__input" value="0">
+                                            <button class="product__btn">Đặt hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4">
+                                <div class="prominent__product prominent__exception ">
+                                    <div class="product__overlay">
+                                        <!-- lop phu anh -->
+                                    </div>
+                                    <div class="product__thumbnail">
+                                        
+                                        <a href="" class="product__link">
+                                            <img src="./asset/images/product4.jpg" alt="" class="product__img">
+                                        </a>
+                                    
+                                        
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="info__id">4</p>
+                                        <p class="info__name">
+                                             Lamington
+                                        </p>
+                                        <p class="info__price">
+                                            300.000đ
+                                        </p>
+                                        <div class="product__buy">
+                                            <input type="number" class="product__input" value="0">
+                                            <button class="product__btn">Đặt hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                         </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+         <!-- san phan ua chuong custom sp noi bat -->
+         <section class="popularity">
+             <div class="grid wide">
+                <!-- tieu de -->
+                <div class="prominent__title">
+                    <h2 class="prominent__headding">
+                        <a href="" class="prominent__headding-link">Món ăn được ưa chuộng</a>
+                    </h2>
+                </div>
+                
+                <!-- san pham -->
+                <div class="prominent__popularity">
+                    <div class="row">
+                        <div class="col l-3">
+                            <div class="prominent__product ">
+                                <div class="product__overlay">
+                                    <!-- lop phu anh -->
+                                </div>
+                                <div class="product__thumbnail">
+                                    
+                                    <a href="" class="product__link">
+                                        <img src="./asset/images/product1.jpg" alt="" class="product__img">
+                                    </a>
+                                
+                
+                                </div>
+                                <div class="product__info">
+                                    <p class="info__id">5</p>
+                                    <p class="info__name">
+                                        Lamington
+                                    </p>
+                                    <p class="info__price">
+                                        300.000đ
+                                    </p>
+                                    <div class="product__buy">
+                                        <input type="number" class="product__input" value="0">
+                                        <button class="product__btn">Đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3">
+                            <div class="prominent__product ">
+                                <div class="product__overlay">
+                                    <!-- lop phu anh -->
+                                </div>
+                                <div class="product__thumbnail">
+                                    
+                                    <a href="" class="product__link">
+                                        <img src="./asset/images/product2.jpg" alt="" class="product__img">
+                                    </a>
+                                
+                                    
+                                </div>
+                                <div class="product__info">
+                                    <p class="info__id">6</p>
+                                    <p class="info__name">
+                                        Lamington
+                                    </p>
+                                    <p class="info__price">
+                                        300.000đ
+                                    </p>
+                                    <div class="product__buy">
+                                        <input type="number" class="product__input" value="0">
+                                        <button class="product__btn">Đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3">
+                            <div class="prominent__product ">
+                                <div class="product__overlay">
+                                    <!-- lop phu anh -->
+                                </div>
+                                <div class="product__thumbnail">
+                                    
+                                    <a href="" class="product__link">
+                                        <img src="./asset/images/product3.jpg" alt="" class="product__img">
+                                    </a>   
+                                </div>
+                                <div class="product__info">
+                                    <p class="info__id">7</p>
+                                    <p class="info__name">
+                                        Lamington
+                                    </p>
+                                    <p class="info__price">
+                                        300.000đ
+                                    </p>
+                                    <div class="product__buy">
+                                        <input type="number" class="product__input" value="0">
+                                        <button class="product__btn">Đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3">
+                            <div class="prominent__product ">
+                                <div class="product__overlay">
+                                    <!-- lop phu anh -->
+                                </div>
+                                <div class="product__thumbnail">
+                                    
+                                    <a href="" class="product__link">
+                                        <img src="./asset/images/product4.jpg" alt="" class="product__img">
+                                    </a>
+                                
+                                    
+                                </div>
+                                <div class="product__info">
+                                    <p class="info__id">8</p>
+                                    <p class="info__name">
+                                        Lamington
+                                    </p>
+                                    <p class="info__price">
+                                        300.000đ
+                                    </p>
+                                    <div class="product__buy">
+                                        <input type="number" class="product__input" value="0">
+                                        <button class="product__btn">Đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3">
+                            <div class="prominent__product ">
+                                <div class="product__overlay">
+                                    <!-- lop phu anh -->
+                                </div>
+                                <div class="product__thumbnail">
+                                    
+                                    <a href="" class="product__link">
+                                        <img src="./asset/images/product1.jpg" alt="" class="product__img">
+                                    </a>
+                                
+                                    
+                                </div>
+                                <div class="product__info">
+                                    <p class="info__id">9</p>
+                                    <p class="info__name">
+                                        Lamington
+                                    </p>
+                                    <p class="info__price">
+                                        300.000đ
+                                    </p>
+                                    <div class="product__buy">
+                                        <input type="number" class="product__input" value="0">
+                                        <button class="product__btn">Đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3">
+                            <div class="prominent__product ">
+                                <div class="product__overlay">
+                                    <!-- lop phu anh -->
+                                </div>
+                                <div class="product__thumbnail">
+                                    
+                                    <a href="" class="product__link">
+                                        <img src="./asset/images/product2.jpg" alt="" class="product__img">
+                                    </a>
+                                
+                                    
+                                </div>
+                                <div class="product__info">
+                                    <p class="info__id">10</p>
+                                    <p class="info__name">
+                                        Lamington
+                                    </p>
+                                    <p class="info__price">
+                                        300.000đ
+                                    </p>
+                                    <div class="product__buy">
+                                        <input type="number" class="product__input" value="0">
+                                        <button class="product__btn">Đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3">
+                            <div class="prominent__product ">
+                                <div class="product__overlay">
+                                    <!-- lop phu anh -->
+                                </div>
+                                <div class="product__thumbnail">
+                                    
+                                    <a href="" class="product__link">
+                                        <img src="./asset/images/product3.jpg" alt="" class="product__img">
+                                    </a>
+                                
+                                    
+                                </div>
+                                <div class="product__info">
+                                    <p class="info__id">11</p>
+                                    <p class="info__name">
+                                        Lamington
+                                    </p>
+                                    <p class="info__price">
+                                        300.000đ
+                                    </p>
+                                    <div class="product__buy">
+                                        <input type="number" class="product__input" value="0">
+                                        <button class="product__btn">Đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3">
+                            <div class="prominent__product ">
+                                <div class="product__overlay">
+                                    <!-- lop phu anh -->
+                                </div>
+                                <div class="product__thumbnail">
+                                    
+                                    <a href="" class="product__link">
+                                        <img src="./asset/images/product4.jpg" alt="" class="product__img">
+                                    </a>
+                                
+                                    
+                                </div>
+                                <div class="product__info">
+                                    <p class="info__id">12</p>
+                                    <p class="info__name">
+                                        Lamington
+                                    </p>
+                                    <p class="info__price">
+                                        300.000đ
+                                    </p>
+                                    <div class="product__buy">
+                                        <input type="number" class="product__input" value="0">
+                                        <button class="product__btn">Đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div> 
+             </div>      
+         </section>
+
+        <!-- san pham moi -->
+        <section class="product__new">
+            <!-- tieu de -->
+            <div class="prominent__title">
+                <h2 class="prominent__headding">
+                    <a href="" class="prominent__headding-link">Món ăn mới</a>
+                </h2>
+            </div>
+            <!-- san pham moi -->
+            <div class="new__product">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6">
+                            <div class="new__container">
+                                <img src="./asset/images/product2.jpg" alt="" class="new__img">
+                                <div class="new__info">
+                                    <span class="new__name">Lamington</span>
+                                    <span class="new__price">300.000đ</span>
+                                    <span class="new__update">Đang cập nhật...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6">
+                            <div class="new__container">
+                                <img src="./asset/images/product2.jpg" alt="" class="new__img">
+                                <div class="new__info">
+                                    <span class="new__name">Lamington</span>
+                                    <span class="new__price">300.000đ</span>
+                                    <span class="new__update">Đang cập nhật...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6">
+                            <div class="new__container">
+                                <img src="./asset/images/product2.jpg" alt="" class="new__img">
+                                <div class="new__info">
+                                    <span class="new__name">Lamington</span>
+                                    <span class="new__price">300.000đ</span>
+                                    <span class="new__update">Đang cập nhật...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6">
+                            <div class="new__container">
+                                <img src="./asset/images/product2.jpg" alt="" class="new__img">
+                                <div class="new__info">
+                                    <span class="new__name">Lamington</span>
+                                    <span class="new__price">300.000đ</span>
+                                    <span class="new__update">Đang cập nhật...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- phan footer -->
+    <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 l-o-1">
+                        <div class="footer__widget">
+                            <h4 class="widget__heading">Liên hệ</h4>
+                            <div class="widget__address">
+                                <i class="fa-solid fa-location-dot address__icon"></i>
+                                <span class="address__name">3/2 phường An Khánh quận Ninh Kiều TP Cần Thơ</span>
+                            </div>
+                            <div class="widget__email">
+                                <i class="fa-solid fa-envelope email__icon"></i>
+                                <span class="email__address">thienthanh17082001@gmail.com</span>
+                            </div>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="" class="footer__link">
+                                        <i class="fa-brands fa-facebook-square footer__icon"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" class="footer__link">
+                                        <i class="fa-brands fa-instagram footer__icon"></i>
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" class="footer__link">
+                                        <i class="fa-solid fa-phone footer__icon"></i>
+                                        00998899
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 l-o-4">
+                        <div class="footer__sale">
+                            <h4 class="sale__heading">Đăng kí nhận thông tin khuyến mãi</h4>
+                            <div class="sale__info">
+                                <input type="text" class="widget__input" placeholder="Nhập email của bạn">
+                            <button class="widget__btn">Đăng kí</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="footer__copyfight">
+                <span class="copyrignt__text">© bản quyền thuộc về ...</span>
+            </div>
+    </footer>
+    <script src="./asset/javacript/main.js"></script>
+</body>
+</html>
