@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="asset/css/cart.css">
     <link rel="stylesheet" href="asset/css/layout.css">
     <link rel="stylesheet" href="asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
-    <title>cart</title>
+    <title>Cart</title>
 </head>
 <body>
     <!-- header -->
@@ -41,6 +41,37 @@
         <div class="header__midhead">
             <div class="grid wide">
                 <div class="midhead__container">
+                    <!-- responsive  -->
+                    <label for="check-input" class="midhead-mobile__icon">
+                        <i class="fa-solid fa-bars"></i>
+                     </label>
+                     <input type="checkbox" id="check-input" class="midhead-mobile__check">
+                     <label for="check-input" class="midhead-mobile__overlay"></label>
+                     <nav class="midhead-mobile__nav">
+
+                         <ul class="mobile-nav__list">
+                            <li class="mobile-list__item">
+                                <a href="./index.html" class="mobile-list__link">Trang chủ</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="" class="mobile-list__link">Sản phẩm</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="" class="mobile-list__link">Liên hệ</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="" class="mobile-list__link">Đăng kí</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="" class="mobile-list__link">Đăng nhập</a>
+                            </li>
+                         </ul>
+                         <label for="check-input" class="nav-mobile__close">
+                            <i class="fa-solid fa-xmark"></i>
+                         </label>
+                     </nav>
+
+
                     <img src="./asset/images/Logo.jpg" alt="" class="midhead__img">
                     <nav class="midhead__nav">
                         <ul class="midhead__list">
@@ -86,7 +117,9 @@
                         </ul>
                     </nav>
                      <div class="midhead__cart">
-                        <i class="fa-solid fa-cart-shopping cart__icon"></i>
+                        <a href="./cart.html" class="cart__link" title="Giỏ hàng">
+                            <i class="fa-solid fa-cart-shopping cart__icon"></i>
+                        </a>
                         <span class="cart__count">0</span>
                      </div>
                 </div>
@@ -103,18 +136,17 @@
                     <!-- cart header -->
                     <div class="cart__header">
                             <div class="row row-nowrap">
-                                <p class="main-cart__text col l-2 ">Hình ảnh</p>
-                                <p class="main-cart__text col l-2 ">Tên sản phẩm</p>
-                                <p class="main-cart__text col l-2 ">Đơn giá</>
+                                <p class="main-cart__text col l-3 ">Hình ảnh</p>
+                                <p class="main-cart__text col l-3 ">Tên sản phẩm</p>
+                                <p class="main-cart__text col l-2 ">Đơn giá</p>
                                 <p class="main-cart__text col l-2 ">Số lượng</p>
-                                <p class="main-cart__text col l-2 ">Thành tiền</p>
                                 <p class="main-cart__text col l-2 ">Xóa</p>
                             </div>
                     </div>
                     <!-- cart body -->
                     <div class="cart__body"> 
 
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col l-2">
                                 <img src="./asset/images/product1.jpg" alt="" class="cart__img">
                             </div>
@@ -133,9 +165,9 @@
                             <div class="cart__body-name col l-2">
                                 <i class="fa-solid fa-trash-can cart__body-icon"></i>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col l-2">
                                 <img src="./asset/images/product1.jpg" alt="" class="cart__img">
                             </div>
@@ -154,12 +186,18 @@
                             <div class="cart__body-name col l-2">
                                 <i class="fa-solid fa-trash-can cart__body-icon"></i>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- cart bottom -->
                     <div class="cart__bot">
-                        <div class="row row-nowrap">
-                            <div class="col l-3 l-o-8">
+                        <div class="row">
+                            <div class="total col l-5 l-o-6 m-6 c-6 m-0-2 c-o-3">
+                                <div class="cart__bot-total ">
+                                    <span class="cart__bot-total-name">Tổng tiền:</span> 
+                                    <span class="cart__bot-price"></span>
+                                </div>
+                            </div>
+                            <div class="col l-3 l-o-8 m-10 m-o-1 c-10 c-o-1">
                                 <p class="cart__bot-name">Tiến hành thanh toán</p>
                             </div>
                         </div>
@@ -224,12 +262,17 @@
             <span class="copyrignt__text">© bản quyền thuộc về ...</span>
         </div>
 </footer>
-<script src="./asset/javacript/main.js">
+<script src="./asset/javacript/main.js"></script>
+<script>
+    var Price=document.querySelector('.cart__bot-price')
+        
+            Price.innerText=Number(Price.innerText).toLocaleString('de-DE', {style : 'currency' , currency: 'VND'})
 </script>
 <script>
-    window.addEventListener('load',addProductToCart);
+     window.addEventListener('load',addProductToCart,false);
+     window.addEventListener('load',countProduct);
+     window.addEventListener('load',CartTotal);
+     
 </script>
-
-
 </body>
 </html>

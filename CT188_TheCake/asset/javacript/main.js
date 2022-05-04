@@ -24,7 +24,7 @@
         var NewProduct={
             id: parseInt(product.getElementsByClassName("info__id")[0].innerText),
             title: product.getElementsByClassName("info__name")[0].innerText,
-            price: product.getElementsByClassName("info__price")[0].innerText,
+            price:product.getElementsByClassName("info__price")[0].innerText,
             imgSr: product.getElementsByClassName("product__img")[0].src,
             quantityCart: 1
         }
@@ -45,13 +45,14 @@
                 if(index>=0){
                     AvailableProduct[index].quantityCart++;
                     window.localStorage.setItem('CartItem',JSON.stringify(AvailableProduct));
+                    
                 }
             //sản phẩm thêm vào chua có trong cart
                 else{
                     AvailableProduct.push(NewProduct);
                     window.localStorage.setItem('CartItem',JSON.stringify(AvailableProduct));
+                    // window.location.reload();
                 }
-            
         }
     }
 
@@ -64,78 +65,85 @@
             var cartBody=document.querySelectorAll(".cart__body")[0];
             cartRow.classList.add("row");
             var cartRowContent=`
-                <div class="col l-2">
+                <p class="cart__body-id">${AvailableProduct[i].id}</p>
+                <div class="col l-3 m-4 c-4">
                 <img src="${AvailableProduct[i].imgSr}" alt="" class="cart__img">
                 </div>
-                <div class="cart__body-name col l-2">
+                <div class="cart__body-name col l-3 m-2 c-2">
                     <p class="cart__body-text">${AvailableProduct[i].title}</p>
                 </div>
-                <div class="cart__body-name col l-2">
+                <div class="cart__body-name col l-2 m-2 c-2">
                     <p class="cart__price">${AvailableProduct[i].price}</p>
                 </div>
-                <div class="cart__body-name col l-2">
-                    <input aria-label="quantity" class="cart__body-input "min="0" name ="cart__input"type="number" value="${AvailableProduct[i].quantityCart}" >
+                <div class="cart__body-name col l-2 m-2 c-2">
+                    <input aria-label="quantity" class="cart__body-input "min="0" name ="cart__input"type="number" value="${AvailableProduct[i].quantityCart}" onchange="quantityCart(this)" >
                 </div>
-                <div class="cart__body-name col l-2">
-                    <p class="cart__totall">500.000đ</p>
-                </div>
-                <div class="cart__body-name col l-2">
+                <buttom onclick="deleteProduct(this)" class="cart__body-name col l-2 m-2 c-2">
                     <i class="fa-solid fa-trash-can cart__body-icon"></i>
-                </div>
+                </buttom>
                 `;
             cartRow.innerHTML=cartRowContent;
-            cartBody.append(cartRow);
-            var BtnRemove=IconCartRemove[i];
+            cartBody.appendChild(cartRow);
         }
         
     }
-
-// xoa san pham khoi cart
-    var IconCartRemove=document.getElementsByClassName("cart__body-icon");
-    for(var i=0;i<IconCartRemove.length;i++){
-        var BtnRemove=IconCartRemove[i];
-        BtnRemove.addEventListener("click",removeCartItem)
-    }
-
-    function removeCartItem(e){
-        var btnClicked=e.target;
-        btnClicked.parentElement.parentElement.remove();
-        updateCartTotall();
-    }
-
-// cập nhật lại số lượng 
-    var quanttyInput=document.getElementsByClassName("cart__body-input")
-    for(var i=0;i<quanttyInput.length;i++){
-        var input=quanttyInput[i];
-        input.addEventListener("change",quantityChanged(input,i))
-    }
-    function quantityChanged(e,index){
+// hien thi so luong tren cart
+    function countProduct(){
         var AvailableProduct=[];
-        AvailableProduct=JSON.parse(window.localStorage.getItem('CartItem'))
-        var input=e.target;
-        //AvailableProduct[index].quantityCart++;
-        console.log(i);
+        AvailableProduct=JSON.parse(window.localStorage.getItem('CartItem'));
+        var count=AvailableProduct.length;
+        var CartCount=document.querySelector(".cart__count");
+        CartCount.innerText=count;
     }
-      
-    function updateCartTotall() {
-        var cartItemContainer=document.getElementsByClassName("cart__body")[0];
-        var cartRows=cartItemContainer.getElementsByClassName("row");
-        for(var i=0;i<cartRows.length;i++){
-            var cartRow=cartRows[i];
-            var cartPrice=cartRow.getElementsByClassName("cart__price")[0];
-            var cartQuantity=cartRow.getElementsByClassName("cart__body-input")[0];
-            var price=parseFloat(cartPrice.innerText.replace("đ",""))*1000;
-            var quantity=cartQuantity.value;
-            var total=price*quantity;
-            var carttotal=cartRow.getElementsByClassName("cart__totall")[0];
-            carttotal.innerText=total;
+
+// hien thi tong tien
+    function CartTotal(){
+        var Total=document.querySelector('.cart__bot-total');
+        var AvailableProduct=[];
+        AvailableProduct=JSON.parse(window.localStorage.getItem('CartItem'));
+        var SumPrice=0;
+        for(var i=0;i<AvailableProduct.length;i++){
+            
+            SumPrice+=Number(AvailableProduct[i].price.replace(/[^0-9]/g,"")) * Number(AvailableProduct[i].quantityCart); //replace chuyen doi chuoi thanh so
         }
-        
+        console.log(SumPrice)
+        Total.innerText=SumPrice;
+        Total.innerText=Number(Total.innerText).toLocaleString('de-DE', {style : 'currency' , currency: 'VND'})// chuyen menh gia tien VND
     }
-
-
-    
-
-
-
-
+// xoa san pham ra khoi gio hang
+    function deleteProduct(e){
+        var cartRow=e.parentElement;
+        var cartId=cartRow.getElementsByClassName('cart__body-id')[0];
+        var AvailableProduct=[];
+        AvailableProduct=JSON.parse(window.localStorage.getItem('CartItem'));
+        var index=0;
+        for(var i=0;i<AvailableProduct.length;i++){
+            if(cartId.innerText===AvailableProduct[i].id){
+                index=i;
+            }
+        }
+        for(var i=index;i<AvailableProduct.length;i++){
+            AvailableProduct[i]=AvailableProduct[i+1];
+        }
+        AvailableProduct.length--;
+        window.localStorage.setItem('CartItem',JSON.stringify(AvailableProduct))
+        cartRow.remove();
+        CartTotal();
+    }
+// thay doi  so luong
+    function quantityCart(e){
+        var cartRow=e.parentElement.parentElement;
+        var cartId=cartRow.getElementsByClassName('cart__body-id')[0];
+        var AvailableProduct=[];
+        AvailableProduct=JSON.parse(window.localStorage.getItem('CartItem'));
+        var index=0;
+        for(var i=0;i<AvailableProduct.length;i++){
+            if(cartId.innerText==AvailableProduct[i].id){
+                index=i;
+            }
+        }
+        AvailableProduct[index].quantityCart=e.value;
+        window.localStorage.setItem('CartItem',JSON.stringify(AvailableProduct));
+        CartTotal();
+        window.location.reload();
+    }
