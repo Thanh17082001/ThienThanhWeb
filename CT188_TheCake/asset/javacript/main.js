@@ -106,7 +106,6 @@
             
             SumPrice+=Number(AvailableProduct[i].price.replace(/[^0-9]/g,"")) * Number(AvailableProduct[i].quantityCart); //replace chuyen doi chuoi thanh so
         }
-        console.log(SumPrice)
         Total.innerText=SumPrice;
         Total.innerText=Number(Total.innerText).toLocaleString('de-DE', {style : 'currency' , currency: 'VND'})// chuyen menh gia tien VND
     }
@@ -147,3 +146,4 @@
         CartTotal();
         window.location.reload();
     }
+

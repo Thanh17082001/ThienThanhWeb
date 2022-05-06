@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/base.css">
+    <link rel="stylesheet" href="asset/css/grid.css">
+    <link rel="stylesheet" href="asset/css/layout.css">
+    <link rel="stylesheet" href="asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/product.css">
+
+
+    <title>Sanpham</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__tophead">
+            <div class="grid wide">
+                <div class="tophead__container">
+                    <div class="tophead__contact">
+                        <span class="contact__HL">Hotline:</span>
+                        <span class="contact__numberphone">00112233</span>
+                    </div>
+                    <div class="tophead__list">
+                        <div class="tophead__search">
+                            <input type="text" placeholder="Tìm kiếm sản phẩm" class="search__input">
+                            <button class="search__btn">
+                                <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                            </button>
+                        </div>
+                        <div class="tophead__account">
+                            <a href="" class="account__login">Đăng nhập</a>
+                            <span class="account__and">&</span>
+                            <a href="../form/form.html" class="account__register">Đăng kí</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__midhead">
+            <div class="grid wide">
+                <div class="midhead__container">
+                    <img src="../asset/images/Logo.jpg" alt="" class="midhead__img">
+
+
+                    <nav class="midhead__nav">
+                        <ul class="midhead__list">
+                            <li class="midhead__item">
+                                <a href="" class="midhead__link">
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="midhead__item">
+                                <a href="" class="midhead__link product__hover">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                    Sản phẩm
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="item__small">
+                                    <li class="item__small-list">
+                                        <a href="" class="item__small-link">Món ăn nổi bật</a>
+                                    </li>
+                                    <li class="item__small-list">
+                                        <a href="" class="item__small-link ">
+                                            Món ăn ưa chuộng
+                                            <!-- <i class="fa-solid fa-caret-right item__small-icon"></i> -->
+                                        </a>
+                                        <!-- <ul class="item__smalllv2">
+                                            <li class="item__small-list">
+                                                <a href="" class="item__small-link">Trà</a>
+                                            </li>
+                                            <li class="item__small-list">
+                                                <a href="" class="item__small-link">Bánh</a>
+                                            </li>
+                                            <li class="item__small-list">
+                                                <a href="" class="item__small-link">Kem tươi</a>
+                                            </li>
+                                            <li class="item__small-list">
+                                                <a href="" class="item__small-link">Cafe</a>
+                                            </li>
+                                            <li class="item__small-list">
+                                                <a href="" class="item__small-link">Nước ép</a>
+                                            </li>
+                                        </ul> -->
+                                    </li>
+                                    <li class="item__small-list">
+                                        <a href="" class="item__small-link">Món ăn mới</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="midhead__item">
+                                <a href="" class="midhead__link">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="midhead__item">
+                                <a href="" class="midhead__link">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="midhead__item">
+                                <a href="" class="midhead__link">
+                                    <i class="fa-solid fa-phone"></i>
+                                    Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="midhead__cart">
+                        <a href="./cart.html" class="cart__link">
+                            <i class="fa-solid fa-cart-shopping cart__icon"></i>
+                        </a>
+                        <span class="cart__count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__bottomhead">
+            <!-- <img src="../asset/images/bottomhead.jpg" alt="" class="bottomhead__img"> -->
+        </div>
+    </header>
+
+    <!-- phan body -->
+    <main class="main">
+
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="trangchu.html" class="breadcrumb-page">Trang chủ</a>
+                </li>
+                <span>/</span>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <a href="sanpham.html" class="breadcrumb-page active">Tất cả sản phẩm </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="wrapper-main">
+
+            <div class="main-sidebar">
+
+                <!-- <div class="main-sidebar-menu">
+                    <div class="sidebar-title">
+                        <div class="sidebar-title__img">
+                            <img src="../products/images/cake-aside-title.png" alt="">
+                        </div>
+                        <h2 class="title-menu">
+                            SẢN PHẨM
+                        </h2>
+                    </div>
+                    <nav class="nav-sidebar">
+                        <ul class="nav-sidebar__list">
+                            <li class="nav-sidebar__menu-item">
+                                <a href="" class="nav-sidebar__link">Trang chủ</a>
+                            </li>
+                            <li class="nav-sidebar__menu-item">
+                                <a href="" class="nav-sidebar__link">Giới thiệu</a>
+                            </li>
+                            <li class="nav-sidebar__menu-item">
+                                <a href="" class="nav-sidebar__link">Sản phẩm</a>
+                            </li>
+                            <li class="nav-sidebar__menu-item">
+                                <a href="" class="nav-sidebar__link">Blog</a>
+                            </li>
+                            <li class="nav-sidebar__menu-item">
+                                <a href="" class="nav-sidebar__link">Liên hệ</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div> -->
+
+                <div class="main-sidebar-minilist">
+                    <div class="sidebar-title">
+                        <div class="sidebar-title__img">
+                            <!-- <img src="../products/images/cake-aside-title.png" alt=""> -->
+                        </div>
+                        <h2 class="title-menu">
+                            SẢN PHẨM
+                        </h2>
+                    </div>
+                    <nav class="nav-sidebar">
+                        <ul class="nav-sidebar__list">
+                            <li class="nav-sidebar__minilist-item">
+                                <div class="nav-sidebar__item-img">
+                                    <img src="/asset/images/product/ca_phe_cappuccino.jpg" alt="" class="img-sidebar__minilist">
+                                </div>
+                                <div class="nav-sidebar__item-content">
+                                    <a class="minilist-info__products">Món ăn nổi bật</a>
+                                    <div class="minilist_price__box">
+                                        <!-- <div class="minilist-price_products">
+                                            300.000đ
+                                        </div>
+                                        <del class="minilist-price__compare">
+                                            3.000.000đ
+                                        </del> -->
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-sidebar__minilist-item">
+                                <div class="nav-sidebar__item-img">
+                                    <img src="/asset/images/product/ca_phe_cappuccino.jpg" alt=""
+                                        class="img-sidebar__minilist">
+                                </div>
+                                <div class="nav-sidebar__item-content">
+                                    <a class="minilist-info__products">Món ăn ưa chuộng</a>
+                                    <div class="minilist_price__box">
+                                        <!-- <div class="minilist-price_products">
+                                            400.000đ
+                                        </div>
+                                        <del class="minilist-price__compare">
+                                            1.000.000đ
+                                        </del> -->
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-sidebar__minilist-item">
+                                <div class="nav-sidebar__item-img">
+                                    <img src="/asset/images/product/ca_phe_cappuccino.jpg" alt=""
+                                        class="img-sidebar__minilist">
+                                </div>
+                                <div class="nav-sidebar__item-content">
+                                    <a class="minilist-info__products">Món ăn mới</a>
+                                    <div class="minilist_price__box">
+                                        <!-- <a class="minilist-price_products">
+                                            Liên Hệ
+                                        </a>
+                                        <del class="minilist-price__compare">
+
+                                        </del> -->
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- <li class="nav-sidebar__minilist-item">
+                                <div class="nav-sidebar__item-img">
+                                    <img src="../images/product/fruit_cream_puff.jpg" alt=""
+                                        class="img-sidebar__minilist">
+                                </div>
+                                <div class="nav-sidebar__item-content">
+                                    <a class="minilist-info__products">Fruit Cream Puff</a>
+                                    <div class="minilist_price__box">
+                                        <div class="minilist-price_products">
+                                            399.000đ
+                                        </div>
+                                        <del class="minilist-price__compare">
+                                            400.000đ
+                                        </del>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-sidebar__minilist-item">
+                                <div class="nav-sidebar__item-img">
+                                    <img src="../images/product/espresso_con_panna.jpg" alt=""
+                                        class="img-sidebar__minilist">
+                                </div>
+                                <div class="nav-sidebar__item-content">
+                                    <a class="minilist-info__products">Espresso Con Panna</a>
+                                    <div class="minilist_price__box">
+                                        <div class="minilist-price_products">
+                                            199.000đ
+                                        </div>
+                                        <del class="minilist-price__compare">
+                                            250.000đ
+                                        </del>
+                                    </div>
+                                </div>
+                            </li> -->
+
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="main-sidebar-price">
+                    <div class="sidebar-title">
+                        <div class="sidebar-title__img">
+                            <!-- <img src="../products/images/cake-aside-title.png" alt=""> -->
+                        </div>
+                        <!-- <div class="price__icon">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </div> -->
+                        <h2 class="title-menu">
+                            KHOẢNG GIÁ
+                        </h2>
+                    </div>
+                    <nav class="nav-sidebar">
+                        <ul class="nav-sidebar__list">
+                            <li class="nav-sidebar__price-item">
+                                <input type="checkbox" id="under_100k" class="input-price">
+                                <label for="under_100k" class="label-price">Giá dưới 100.000đ</label>
+                            </li>
+
+                            <li class="nav-sidebar__price-item">
+                                <input type="checkbox" id="100-300" class="input-price">
+                                <label for="100-300" class="label-price">100.000đ - 300.000đ</label>
+                            </li>
+
+                            <li class="nav-sidebar__price-item">
+                                <input type="checkbox" id="300-500" class="input-price">
+                                <label for="300-500" class="label-price">300.000đ - 500.000đ</label>
+                            </li>
+
+                            <li class="nav-sidebar__price-item">
+                                <input type="checkbox" id="500-10000" class="input-price">
+                                <label for="500-1000" class="label-price">500.000đ - 1.000.000đ </label>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="main-container">
+                <h1 class="product-main__heading">Tất Cả Sản Phẩm</h1>
+                <div class="product-main__sort">
+                    <div class="sort-text">
+                        Sắp xếp theo
+                    </div>
+                    <div class="sort-col__product">
+                        <ul class="nav-sort">
+                            <li class="nav-sort-list">
+                                <div class="nav-sort__select">
+                                    <span>Thứ tự</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <ul class="sort-item">
+                                    <li class="sort-item__link"> <a href="">Mặc định</a> </li>
+                                    <li class="sort-item__link"> <a href="">A->Z</a> </li>
+                                    <li class="sort-item__link"> <a href="">Z->A</a> </li>
+                                    <li class="sort-item__link"> <a href="">Tăng dần</a> </li>
+                                    <li class="sort-item__link"> <a href="">Giảm dần</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+                <div class="product-main__view">
+                    <div class="product-view__item">
+                        <div class="product-item__top">
+                            <div class="product-view__item-img">
+                                <img src="./asset/images/product/green_tea.jpg" alt="" class="product__img">
+                            </div>
+                            <div class="product__buy">
+                                <button type="button" class="product__btn">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-view__item-info">
+                             <p class="info__id" style="display: none;">14</p>
+                            <div class="info__name">
+                                Thienthanh
+                            </div>
+                            <div class="info__price">
+                                    300.000đ
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+
+        </div>
+        <!-- chuyen trang -->
+        <div class="product-page">
+            <div class="page-1">
+                <a href="" class="page-text">
+                    <p>1</p>
+                </a>
+            </div>
+            <div class="page-2">
+                <a href="" class="page-text">
+                    <p>2</p>
+                </a>
+            </div>
+            <div class="page-next">
+                <a href="" class="page-text">
+                    <p><i class="fa-solid fa-angles-right"></i></p>
+                </a>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+    <!-- phan footer -->
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-3 l-o-3">
+                    <div class="footer__widget">
+                        <h4 class="widget__heading">Liên hệ</h4>
+                        <div class="widget__address">
+                            <i class="fa-solid fa-location-dot address__icon"></i>
+                            <span class="address__name">3/2 phường An Khánh quận Ninh Kiều TP Cần Thơ</span>
+                        </div>
+                        <div class="widget__email">
+                            <i class="fa-solid fa-envelope email__icon"></i>
+                            <span class="email__address">thienthanh17082001@gmail.com</span>
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    <i class="fa-brands fa-facebook-square footer__icon"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    <i class="fa-brands fa-instagram footer__icon"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    <i class="fa-solid fa-phone footer__icon"></i>
+                                    00998899
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col l-3">
+                    <div class="footer__sale">
+                        <h4 class="sale__heading">Đăng kí nhận thông tin khuyến mãi</h4>
+                        <div class="sale__info">
+                            <input type="text" class="widget__input" placeholder="Nhập email của bạn">
+                            <button class="widget__btn">Đăng kí</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer__copyfight">
+            <span class="copyrignt__text">© bản quyền thuộc về ...</span>
+        </div>
+    </footer>
+    <script src="./asset/javacript/main.js"></script>
+</body>
+
+</html>
