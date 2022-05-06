@@ -508,6 +508,9 @@
     .cart__img{
         width: 100%;
     }
+    .header{
+        padding: 0 15px;
+    }
     .footer{
         padding: 0 12px;
     }

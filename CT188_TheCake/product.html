@@ -17,7 +17,7 @@
 
 <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" >
         <div class="header__tophead">
             <div class="grid wide">
                 <div class="tophead__container">
@@ -33,9 +33,9 @@
                             </button>
                         </div>
                         <div class="tophead__account">
-                            <a href="" class="account__login">Đăng nhập</a>
+                            <a href="./Login.html" class="account__login">Đăng nhập</a>
                             <span class="account__and">&</span>
-                            <a href="../form/form.html" class="account__register">Đăng kí</a>
+                            <a href="./register.html" class="account__register">Đăng kí</a>
                         </div>
                     </div>
                 </div>
@@ -45,19 +45,51 @@
         <div class="header__midhead">
             <div class="grid wide">
                 <div class="midhead__container">
-                    <img src="../asset/images/Logo.jpg" alt="" class="midhead__img">
+                    <!-- responsive  -->
+                    <label for="check-input" class="midhead-mobile__icon">
+                        <i class="fa-solid fa-bars"></i>
+                     </label>
+                     <input type="checkbox" id="check-input" class="midhead-mobile__check">
+                     <label for="check-input" class="midhead-mobile__overlay"></label>
+                     <nav class="midhead-mobile__nav">
+
+                         <ul class="mobile-nav__list">
+                            <li class="mobile-list__item">
+                                <a href="./index.html" class="mobile-list__link">Trang chủ</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="./product.html" class="mobile-list__link">Sản phẩm</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="./product.html" class="mobile-list__link">Giới thiệu</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="./contact.html" class="mobile-list__link">Liên hệ</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="./register.html" class="mobile-list__link">Đăng kí</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="./Login.html" class="mobile-list__link">Đăng nhập</a>
+                            </li>
+                         </ul>
+                         <label for="check-input" class="nav-mobile__close">
+                            <i class="fa-solid fa-xmark"></i>
+                         </label>
+                     </nav>
 
 
+                    <img src="./asset/images/Logo.jpg" alt="" class="midhead__img">
                     <nav class="midhead__nav">
                         <ul class="midhead__list">
                             <li class="midhead__item">
-                                <a href="" class="midhead__link">
+                                <a href="./index.html" class="midhead__link">
                                     <i class="fa-solid fa-house-chimney"></i>
                                     Trang chủ
                                 </a>
                             </li>
                             <li class="midhead__item">
-                                <a href="" class="midhead__link product__hover">
+                                <a href="./product.html" class="midhead__link product__hover">
                                     <i class="fa-solid fa-cake-candles"></i>
                                     Sản phẩm
                                     <i class="fa-solid fa-angle-down"></i>
@@ -69,25 +101,7 @@
                                     <li class="item__small-list">
                                         <a href="" class="item__small-link ">
                                             Món ăn ưa chuộng
-                                            <!-- <i class="fa-solid fa-caret-right item__small-icon"></i> -->
                                         </a>
-                                        <!-- <ul class="item__smalllv2">
-                                            <li class="item__small-list">
-                                                <a href="" class="item__small-link">Trà</a>
-                                            </li>
-                                            <li class="item__small-list">
-                                                <a href="" class="item__small-link">Bánh</a>
-                                            </li>
-                                            <li class="item__small-list">
-                                                <a href="" class="item__small-link">Kem tươi</a>
-                                            </li>
-                                            <li class="item__small-list">
-                                                <a href="" class="item__small-link">Cafe</a>
-                                            </li>
-                                            <li class="item__small-list">
-                                                <a href="" class="item__small-link">Nước ép</a>
-                                            </li>
-                                        </ul> -->
                                     </li>
                                     <li class="item__small-list">
                                         <a href="" class="item__small-link">Món ăn mới</a>
@@ -100,33 +114,25 @@
                                     Giới thiệu
                                 </a>
                             </li>
+                           
                             <li class="midhead__item">
-                                <a href="" class="midhead__link">
-                                    <i class="fa-solid fa-pencil"></i>
-                                    Blog
-                                </a>
-                            </li>
-                            <li class="midhead__item">
-                                <a href="" class="midhead__link">
+                                <a href="./contact.html" class="midhead__link">
                                     <i class="fa-solid fa-phone"></i>
                                     Liên hệ
                                 </a>
                             </li>
                         </ul>
                     </nav>
-                    <div class="midhead__cart">
-                        <a href="./cart.html" class="cart__link">
+                     <div class="midhead__cart">
+                        <a href="./cart.html" class="cart__link" title="Giỏ hàng">
                             <i class="fa-solid fa-cart-shopping cart__icon"></i>
                         </a>
                         <span class="cart__count">0</span>
-                    </div>
+                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="header__bottomhead">
-            <!-- <img src="../asset/images/bottomhead.jpg" alt="" class="bottomhead__img"> -->
-        </div>
     </header>
 
     <!-- phan body -->
@@ -452,6 +458,9 @@
         </div>
     </footer>
     <script src="./asset/javacript/main.js"></script>
+    <script>
+        window.addEventListener('load',countProduct);
+   </script>
 </body>
 
 </html>
