@@ -2,8 +2,9 @@
     --white:#fff;
     --black:#000;
     --text:#333;
-    --primary:#fa5fb4;
+    --primary: #F05454;
     --midheadcolor:#84FFFF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .primary__color{
     color: var(--primary);

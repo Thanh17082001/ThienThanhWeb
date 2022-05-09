@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="asset/css/layout.css">
     <link rel="stylesheet" href="asset/css/form.css">
     <link rel="stylesheet" href="asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
-    <title>Register</title>
+    <title>Login</title>
 </head>
 <body>
     <!-- header -->
@@ -31,7 +31,7 @@
                         <div class="tophead__account">
                             <a href="./Login.html" class="account__login">Đăng nhập</a>
                             <span class="account__and">&</span>
-                            <a href="" class="account__register">Đăng kí</a>
+                            <a href="./register.html" class="account__register">Đăng kí</a>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,12 @@
                      <input type="checkbox" id="check-input" class="midhead-mobile__check">
                      <label for="check-input" class="midhead-mobile__overlay"></label>
                      <nav class="midhead-mobile__nav">
-
+                        <div class="mobile__search">
+                            <div class="mobile-search__item">
+                                <input type="text" class="mobile-search__input" placeholder="tìm kiếm sản phẩm"></input>
+                                <i class="fa-solid fa-magnifying-glass mobile-search__icon" ></i>
+                            </div>
+                        </div>
                          <ul class="mobile-nav__list">
                             <li class="mobile-list__item">
                                 <a href="./index.html" class="mobile-list__link">Trang chủ</a>
@@ -82,7 +87,7 @@
                                 </a>
                             </li>
                             <li class="midhead__item">
-                                <a href="./product.html" class="midhead__link product__hover">
+                                <a href="./product1.html" class="midhead__link product__hover">
                                     <i class="fa-solid fa-cake-candles"></i>
                                     Sản phẩm
                                     <i class="fa-solid fa-angle-down"></i>
@@ -102,7 +107,7 @@
                                 </ul>
                             </li>
                             <li class="midhead__item">
-                                <a href="./contact.html" class="midhead__link">
+                                <a href="" class="midhead__link">
                                     <i class="fa-solid fa-circle-info"></i>
                                     Giới thiệu
                                 </a>
@@ -129,20 +134,20 @@
                 </div>
             </div>
         </div>
+
     </header>
     <!-- body -->
     <div class="main">
 
         <form action="" method="POST" class="form" id="form-1">
-          <h3 class="heading">Thành viên đăng ký</h3>
+          <div class="option">
+            <h3 class="heading">Đăng nhập</h3>
+            <a href="./register.html" class="option__link">Đăng kí</a>
+          </div>
     
           <div class="spacer"></div>
     
-          <div class="form-group">
-            <label for="fullname" class="form-label">Họ và tên </label>
-            <input id="fullname" name="fullname" type="text" placeholder="Full name" class="form-control">
-            <span class="form-message"></span>
-          </div>
+          
     
           <div class="form-group">
             <label for="email" class="form-label">Email</label>
@@ -157,29 +162,21 @@
             <span class="form-message"></span>
           </div>
           <div class="form-group">
-            <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
-            <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password"
-              class="form-control">
-            <span class="form-message"></span>
+            <label for="password" class="form-label">Hoặc đăng nhập bằng</label>
+            <div class="login__social">
+                <div class="login__facebook">
+                    <i class="fa-brands fa-facebook-square login__icon"></i>
+                    <p class="facebook__title">Facebook</p>
+                </div>
+                <div class="login__google">
+                    <i class="fa-brands fa-google login__icon"></i> 
+                    <p class="google__title">Google</p>
+                </div>
+            </div>
           </div>
+          
     
-          <div class="form-group form-radio">
-            <label class="form-label">
-              <input type="checkbox" name="gender" id="#gender-male" value="male">
-              <span class="radio-name">Male</span>
-            </label>
-            <label class="form-label">
-              <input type="checkbox" name="gender" id="#gender-female" value="female">
-              <span class="radio-name">Female</span>
-            </label>
-            <label class="form-label">
-              <input type="checkbox" name="gender" id="#gender-other" value="other">
-              <span class="radio-name">other</span>
-            </label>
-            <span class="form-message"></span>
-          </div>
-    
-          <button class="form-submit">Đăng ký</button>
+          <button class="form-submit">Đăng nhập</button>
     </div>
     <!-- footer -->
     <footer class="footer">
@@ -236,7 +233,6 @@
             <span class="copyrignt__text">© bản quyền thuộc về ...</span>
         </div>
     </footer>
-    <!-- javacript -->
     <script src="./asset/javacript/main.js"></script>
     <script>
         window.addEventListener('load',countProduct);

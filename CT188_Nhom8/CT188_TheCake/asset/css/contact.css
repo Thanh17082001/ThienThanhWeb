@@ -43,7 +43,7 @@
 
 .contact__regist form button{
 	font-size: 1.4rem;
-	background: var(--primary-color);
+	background: var(--primary);
 	padding: 0.6rem 1.4rem;
 	outline: none;
 	color: var(--white-color);

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
     <title>The Cake</title>
 </head>
+
 <body>
     <!-- header -->
     <header class="header">
@@ -49,13 +51,18 @@
                      <input type="checkbox" id="check-input" class="midhead-mobile__check">
                      <label for="check-input" class="midhead-mobile__overlay"></label>
                      <nav class="midhead-mobile__nav">
-
+                        <div class="mobile__search">
+                            <div class="mobile-search__item">
+                                <input type="text" class="mobile-search__input" placeholder="tìm kiếm sản phẩm"></input>
+                                <i class="fa-solid fa-magnifying-glass mobile-search__icon" ></i>
+                            </div>
+                        </div>
                          <ul class="mobile-nav__list">
                             <li class="mobile-list__item">
                                 <a href="./index.html" class="mobile-list__link">Trang chủ</a>
                             </li>
                             <li class="mobile-list__item">
-                                <a href="" class="mobile-list__link">Sản phẩm</a>
+                                <a href="./product1.html" class="mobile-list__link">Sản phẩm</a>
                             </li>
                             <li class="mobile-list__item">
                                 <a href="./contact.html" class="mobile-list__link">Liên hệ</a>
@@ -72,8 +79,7 @@
                          </label>
                      </nav>
 
-                    <img src="./asset/images/Logo.jpg" alt="" class="midhead__img">
-
+                     <!-- pc -->
                     <nav class="midhead__nav">
                         <ul class="midhead__list">
                             <li class="midhead__item">
@@ -83,7 +89,7 @@
                                 </a>
                             </li>
                             <li class="midhead__item">
-                                <a href="./product.html" class="midhead__link product__hover">
+                                <a href="./product1.html" class="midhead__link product__hover">
                                     <i class="fa-solid fa-cake-candles"></i>
                                     Sản phẩm
                                     <i class="fa-solid fa-angle-down"></i>
@@ -108,7 +114,7 @@
                                     Giới thiệu
                                 </a>
                             </li>
-                           
+
                             <li class="midhead__item">
                                 <a href="./contact.html" class="midhead__link">
                                     <i class="fa-solid fa-phone"></i>
@@ -118,21 +124,29 @@
                         </ul>
                     </nav>
 
-                     <div class="midhead__cart">
+                    <div class="midhead__cart">
                         <a href="./cart.html" class="cart__link" title="Giỏ hàng">
                             <i class="fa-solid fa-cart-shopping cart__icon"></i>
                         </a>
                         <span class="cart__count">0</span>
-                        
-                     </div>
 
-                     
+                    </div>
+
+
                 </div>
             </div>
         </div>
 
         <div class="header__bottomhead">
-            <img src="./asset/images/bottomhead.jpg" alt="" class="bottomhead__img">
+            <!-- <img src="./asset/images/bottomhead.jpg" alt="" class="bottomhead__img"> -->
+            <div class="bottomhead-banner">
+                <div class="bottomhead-logo">
+                    <div class="logo-text">CAKE </div>
+                    <div class="logo-text">SHOP </div>
+                </div>
+                <img src="./asset/images2/wallpaperbetter.com_2560x1440.jpg" alt="" class="bottomhead__img">
+            </div>
+            
         </div>
     </header>
 
@@ -142,11 +156,11 @@
             <!-- San pham noi bat -->
             <section class="prominent">
                 <div class="prominent__title">
-                        <h2 class="prominent__headding">
-                            <a href="" class="prominent__headding-link">Món ăn nổi bật</a>
-                        </h2>
+                    <h2 class="prominent__headding">
+                        <a href="" class="prominent__headding-link">Món ăn nổi bật</a>
+                    </h2>
                 </div>
-                       
+
                 <div class="prominent__hide">
                     <div class="prominent__roll">
                         <div class="row row-nowrap">
@@ -156,24 +170,25 @@
                                         <!-- lop phu anh -->
                                     </div>
                                     <div class="product__thumbnail">
-                                        
+
                                         <a href="" class="product__link">
-                                            <img src="./asset/images/id1.jpg" alt="" class="product__img img__exception">
+                                            <img src="./asset/images/id1.jpg" alt=""
+                                                class="product__img img__exception">
                                         </a>
-                                    
-                
+
+
                                     </div>
                                     <div class="product__info">
                                         <p class="info__id">1</p>
                                         <p class="info__name">
-                                             Bánh kem hoa cúc xanh dương
+                                            Bánh kem hoa cúc xanh dương
                                         </p>
                                         <p class="info__price">
                                             264999
                                         </p>
                                         <div class="product__buy">
-                                            
-                                            <button class="product__btn" >Đặt hàng</button>
+
+                                            <button class="product__btn">Đặt hàng</button>
                                         </div>
                                     </div>
                                 </div>
@@ -185,17 +200,18 @@
                                         <!-- lop phu anh -->
                                     </div>
                                     <div class="product__thumbnail">
-                                        
+
                                         <a href="" class="product__link">
-                                            <img src="./asset/images/id2.jpg" alt="" class="product__img img__exception">
+                                            <img src="./asset/images/id2.jpg" alt=""
+                                                class="product__img img__exception">
                                         </a>
-                                    
+
 
                                     </div>
                                     <div class="product__info">
                                         <p class="info__id">2</p>
                                         <p class="info__name">
-                                             Bánh kem hoa cúc xanh lá 
+                                            Bánh kem hoa cúc xanh lá
                                         </p>
                                         <p class="info__price">
                                             280000
@@ -213,23 +229,24 @@
                                         <!-- lop phu anh -->
                                     </div>
                                     <div class="product__thumbnail">
-                                        
+
                                         <a href="" class="product__link">
-                                            <img src="./asset/images/id3.jpg" alt="" class="product__img img__exception">
+                                            <img src="./asset/images/id3.jpg" alt=""
+                                                class="product__img img__exception">
                                         </a>
-                                    
-                                       
+
+
                                     </div>
                                     <div class="product__info">
                                         <p class="info__id">3</p>
                                         <p class="info__name">
-                                             Bánh kem hoa cúc màu tím
+                                            Bánh kem hoa cúc màu tím
                                         </p>
                                         <p class="info__price">
                                             160000
                                         </p>
                                         <div class="product__buy">
-                                            
+
                                             <button class="product__btn">Đặt hàng</button>
                                         </div>
                                     </div>
@@ -242,45 +259,46 @@
                                         <!-- lop phu anh -->
                                     </div>
                                     <div class="product__thumbnail">
-                                        
+
                                         <a href="" class="product__link">
-                                            <img src="./asset/images/id4.jpg" alt="" class="product__img img__exception">
+                                            <img src="./asset/images/id4.jpg" alt=""
+                                                class="product__img img__exception">
                                         </a>
-                                    
-                                        
+
+
                                     </div>
                                     <div class="product__info">
                                         <p class="info__id">4</p>
                                         <p class="info__name">
-                                             Bánh kem Hàn Quốc
+                                            Bánh kem Hàn Quốc
                                         </p>
                                         <p class="info__price">
                                             320000
                                         </p>
                                         <div class="product__buy">
-                                            
+
                                             <button class="product__btn">Đặt hàng</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
-                         </div>
+
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
 
-         <!-- san phan ua chuong custom sp noi bat -->
-         <section class="popularity">
-             <div class="grid wide">
+        <!-- san phan ua chuong custom sp noi bat -->
+        <section class="popularity">
+            <div class="grid wide">
                 <!-- tieu de -->
                 <div class="prominent__title">
                     <h2 class="prominent__headding">
                         <a href="" class="prominent__headding-link">Món ăn được ưa chuộng</a>
                     </h2>
                 </div>
-                
+
                 <!-- san pham -->
                 <div class="prominent__popularity">
                     <div class="row">
@@ -290,12 +308,12 @@
                                     <!-- lop phu anh -->
                                 </div>
                                 <div class="product__thumbnail">
-                                    
+
                                     <a href="" class="product__link">
                                         <img src="./asset/images/id5.jpg" alt="" class="product__img">
                                     </a>
-                                
-                
+
+
                                 </div>
                                 <div class="product__info">
                                     <p class="info__id">5</p>
@@ -306,7 +324,7 @@
                                         310000
                                     </p>
                                     <div class="product__buy">
-                                        
+
                                         <button class="product__btn">Đặt hàng</button>
                                     </div>
                                 </div>
@@ -319,12 +337,12 @@
                                     <!-- lop phu anh -->
                                 </div>
                                 <div class="product__thumbnail">
-                                    
+
                                     <a href="" class="product__link">
                                         <img src="./asset/images/id6.jpg" alt="" class="product__img">
                                     </a>
-                                
-                                    
+
+
                                 </div>
                                 <div class="product__info">
                                     <p class="info__id">6</p>
@@ -335,7 +353,7 @@
                                         330000
                                     </p>
                                     <div class="product__buy">
-                                        
+
                                         <button class="product__btn">Đặt hàng</button>
                                     </div>
                                 </div>
@@ -348,10 +366,10 @@
                                     <!-- lop phu anh -->
                                 </div>
                                 <div class="product__thumbnail">
-                                    
+
                                     <a href="" class="product__link">
                                         <img src="./asset/images/id7.jpg" alt="" class="product__img">
-                                    </a>   
+                                    </a>
                                 </div>
                                 <div class="product__info">
                                     <p class="info__id">7</p>
@@ -362,7 +380,7 @@
                                         350000
                                     </p>
                                     <div class="product__buy">
-                                        
+
                                         <button class="product__btn">Đặt hàng</button>
                                     </div>
                                 </div>
@@ -375,12 +393,12 @@
                                     <!-- lop phu anh -->
                                 </div>
                                 <div class="product__thumbnail">
-                                    
+
                                     <a href="" class="product__link">
                                         <img src="./asset/images/product4.jpg" alt="" class="product__img">
                                     </a>
-                                
-                                    
+
+
                                 </div>
                                 <div class="product__info">
                                     <p class="info__id">8</p>
@@ -391,7 +409,7 @@
                                         400000
                                     </p>
                                     <div class="product__buy">
-                                        
+
                                         <button class="product__btn">Đặt hàng</button>
                                     </div>
                                 </div>
@@ -404,12 +422,12 @@
                                     <!-- lop phu anh -->
                                 </div>
                                 <div class="product__thumbnail">
-                                    
+
                                     <a href="" class="product__link">
                                         <img src="./asset/images/id8.jpg" alt="" class="product__img">
                                     </a>
-                                
-                                    
+
+
                                 </div>
                                 <div class="product__info">
                                     <p class="info__id">9</p>
@@ -420,7 +438,7 @@
                                         360000
                                     </p>
                                     <div class="product__buy">
-                                        
+
                                         <button class="product__btn">Đặt hàng</button>
                                     </div>
                                 </div>
@@ -433,12 +451,12 @@
                                     <!-- lop phu anh -->
                                 </div>
                                 <div class="product__thumbnail">
-                                    
+
                                     <a href="" class="product__link">
                                         <img src="./asset/images/id10.jpg" alt="" class="product__img">
                                     </a>
-                                
-                                    
+
+
                                 </div>
                                 <div class="product__info">
                                     <p class="info__id">10</p>
@@ -449,7 +467,7 @@
                                         320000
                                     </p>
                                     <div class="product__buy">
-                                        
+
                                         <button class="product__btn">Đặt hàng</button>
                                     </div>
                                 </div>
@@ -462,12 +480,12 @@
                                     <!-- lop phu anh -->
                                 </div>
                                 <div class="product__thumbnail">
-                                    
+
                                     <a href="" class="product__link">
                                         <img src="./asset/images/product3.jpg" alt="" class="product__img">
                                     </a>
-                                
-                                    
+
+
                                 </div>
                                 <div class="product__info">
                                     <p class="info__id">11</p>
@@ -478,7 +496,7 @@
                                         310000
                                     </p>
                                     <div class="product__buy">
-                                        
+
                                         <button class="product__btn">Đặt hàng</button>
                                     </div>
                                 </div>
@@ -491,12 +509,12 @@
                                     <!-- lop phu anh -->
                                 </div>
                                 <div class="product__thumbnail">
-                                    
+
                                     <a href="" class="product__link">
                                         <img src="./asset/images/id11.jpg" alt="" class="product__img">
                                     </a>
-                                
-                                    
+
+
                                 </div>
                                 <div class="product__info">
                                     <p class="info__id">12</p>
@@ -507,17 +525,17 @@
                                         370000
                                     </p>
                                     <div class="product__buy">
-                                        
+
                                         <button class="product__btn">Đặt hàng</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
-                </div> 
-             </div>      
-         </section>
+                </div>
+            </div>
+        </section>
 
         <!-- san pham moi -->
         <section class="product__new">
@@ -579,68 +597,74 @@
 
     <!-- phan footer -->
     <footer class="footer">
-            <div class="grid wide">
-                <div class="row">
-                    <div class="col l-3 m-12 c-12 l-o-1">
-                        <div class="footer__widget">
-                            <h4 class="widget__heading">Liên hệ</h4>
-                            <div class="widget__address">
-                                <i class="fa-solid fa-location-dot address__icon"></i>
-                                <span class="address__name">3/2 phường An Khánh quận Ninh Kiều TP Cần Thơ</span>
-                            </div>
-                            <div class="widget__email">
-                                <i class="fa-solid fa-envelope email__icon"></i>
-                                <span class="email__address">thienthanh17082001@gmail.com</span>
-                            </div>
-                            <ul class="footer__list">
-                                <li class="footer__item">
-                                    <a href="" class="footer__link">
-                                        <i class="fa-brands fa-facebook-square footer__icon"></i>
-                                        Facebook
-                                    </a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="" class="footer__link">
-                                        <i class="fa-brands fa-instagram footer__icon"></i>
-                                        Instagram
-                                    </a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="" class="footer__link">
-                                        <i class="fa-solid fa-phone footer__icon"></i>
-                                        00998899
-                                    </a>
-                                </li>
-                            </ul>
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-3 m-12 c-12 l-o-1">
+                    <div class="footer__widget">
+                        <h4 class="widget__heading">Liên hệ</h4>
+                        <div class="widget__address">
+                            <i class="fa-solid fa-location-dot address__icon"></i>
+                            <span class="address__name">3/2 phường An Khánh quận Ninh Kiều TP Cần Thơ</span>
                         </div>
+                        <div class="widget__email">
+                            <i class="fa-solid fa-envelope email__icon"></i>
+                            <span class="email__address">thienthanh17082001@gmail.com</span>
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    <i class="fa-brands fa-facebook-square footer__icon"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    <i class="fa-brands fa-instagram footer__icon"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    <i class="fa-solid fa-phone footer__icon"></i>
+                                    00998899
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <div class="col l-3 m-12 c-12 l-o-4">
-                        <div class="footer__sale">
-                            <h4 class="sale__heading">Đăng kí nhận thông tin khuyến mãi</h4>
-                            <div class="sale__info">
-                                <input type="text" class="widget__input" placeholder="Nhập email của bạn">
+                <div class="col l-3 m-12 c-12 l-o-4">
+                    <div class="footer__sale">
+                        <h4 class="sale__heading">Đăng kí nhận thông tin khuyến mãi</h4>
+                        <div class="sale__info">
+                            <input type="text" class="widget__input" placeholder="Nhập email của bạn">
                             <button class="widget__btn">Đăng kí</button>
-                            </div>
                         </div>
                     </div>
                 </div>
-                
-                
             </div>
-            <div class="footer__copyfight">
-                <span class="copyrignt__text">© bản quyền thuộc về ...</span>
-            </div>
+
+
+        </div>
+        <div class="footer__copyfight">
+            <span class="copyrignt__text">© bản quyền thuộc về ...</span>
+        </div>
     </footer>
     <script>
-        var Price=document.querySelectorAll('.info__price')
-        for(var i=0;Price.length;i++){
+        var Price=document.querySelectorAll('.info__price');
+        var newPrice=document.querySelectorAll('.new__price');
+        for(var i=0;i<Price.length;i++){
             Price[i].innerText=Number(Price[i].innerText).toLocaleString('de-DE', {style : 'currency' , currency: 'VND'})
+        }
+        for(var j=0 ;j<newPrice.length;j++){
+            console.log(newPrice[j])
+            newPrice[j].innerText=Number(newPrice[j].innerText).toLocaleString('de-DE', {style : 'currency' , currency: 'VND'})
         }
     </script>
     <script src="./asset/javacript/main.js"></script>
     <script>
-    window.addEventListener('load',countProduct);
+        window.addEventListener('load', countProduct);
     </script>
 </body>
+
 </html>

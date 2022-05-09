@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="asset/css/product.css">
 
 
-    <title>Sanpham</title>
+
+    <title>Tất cả sản phẩm</title>
 </head>
 
 <body>
     <!-- header -->
-    <header class="header" >
+    <header class="header">
         <div class="header__tophead">
             <div class="grid wide">
                 <div class="tophead__container">
@@ -52,16 +53,18 @@
                      <input type="checkbox" id="check-input" class="midhead-mobile__check">
                      <label for="check-input" class="midhead-mobile__overlay"></label>
                      <nav class="midhead-mobile__nav">
-
+                        <div class="mobile__search">
+                            <div class="mobile-search__item">
+                                <input type="text" class="mobile-search__input" placeholder="tìm kiếm sản phẩm"></input>
+                                <i class="fa-solid fa-magnifying-glass mobile-search__icon" ></i>
+                            </div>
+                        </div>
                          <ul class="mobile-nav__list">
                             <li class="mobile-list__item">
                                 <a href="./index.html" class="mobile-list__link">Trang chủ</a>
                             </li>
                             <li class="mobile-list__item">
-                                <a href="./product.html" class="mobile-list__link">Sản phẩm</a>
-                            </li>
-                            <li class="mobile-list__item">
-                                <a href="./product.html" class="mobile-list__link">Giới thiệu</a>
+                                <a href="./product1.html" class="mobile-list__link">Sản phẩm</a>
                             </li>
                             <li class="mobile-list__item">
                                 <a href="./contact.html" class="mobile-list__link">Liên hệ</a>
@@ -77,8 +80,7 @@
                             <i class="fa-solid fa-xmark"></i>
                          </label>
                      </nav>
-
-
+                    <!-- pc -->
                     <img src="./asset/images/Logo.jpg" alt="" class="midhead__img">
                     <nav class="midhead__nav">
                         <ul class="midhead__list">
@@ -89,7 +91,7 @@
                                 </a>
                             </li>
                             <li class="midhead__item">
-                                <a href="./product.html" class="midhead__link product__hover">
+                                <a href="./product1.html" class="midhead__link product__hover">
                                     <i class="fa-solid fa-cake-candles"></i>
                                     Sản phẩm
                                     <i class="fa-solid fa-angle-down"></i>
@@ -114,7 +116,6 @@
                                     Giới thiệu
                                 </a>
                             </li>
-                           
                             <li class="midhead__item">
                                 <a href="./contact.html" class="midhead__link">
                                     <i class="fa-solid fa-phone"></i>
@@ -123,16 +124,15 @@
                             </li>
                         </ul>
                     </nav>
-                     <div class="midhead__cart">
-                        <a href="./cart.html" class="cart__link" title="Giỏ hàng">
+                    <div class="midhead__cart">
+                        <a href="./cart.html" class="cart__link">
                             <i class="fa-solid fa-cart-shopping cart__icon"></i>
                         </a>
                         <span class="cart__count">0</span>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </header>
 
     <!-- phan body -->
@@ -150,182 +150,6 @@
             </ul>
         </nav>
         <div class="wrapper-main">
-
-            <div class="main-sidebar">
-
-                <!-- <div class="main-sidebar-menu">
-                    <div class="sidebar-title">
-                        <div class="sidebar-title__img">
-                            <img src="../products/images/cake-aside-title.png" alt="">
-                        </div>
-                        <h2 class="title-menu">
-                            SẢN PHẨM
-                        </h2>
-                    </div>
-                    <nav class="nav-sidebar">
-                        <ul class="nav-sidebar__list">
-                            <li class="nav-sidebar__menu-item">
-                                <a href="" class="nav-sidebar__link">Trang chủ</a>
-                            </li>
-                            <li class="nav-sidebar__menu-item">
-                                <a href="" class="nav-sidebar__link">Giới thiệu</a>
-                            </li>
-                            <li class="nav-sidebar__menu-item">
-                                <a href="" class="nav-sidebar__link">Sản phẩm</a>
-                            </li>
-                            <li class="nav-sidebar__menu-item">
-                                <a href="" class="nav-sidebar__link">Blog</a>
-                            </li>
-                            <li class="nav-sidebar__menu-item">
-                                <a href="" class="nav-sidebar__link">Liên hệ</a>
-                            </li>
-
-                        </ul>
-                    </nav>
-                </div> -->
-
-                <div class="main-sidebar-minilist">
-                    <div class="sidebar-title">
-                        <div class="sidebar-title__img">
-                            <!-- <img src="../products/images/cake-aside-title.png" alt=""> -->
-                        </div>
-                        <h2 class="title-menu">
-                            SẢN PHẨM
-                        </h2>
-                    </div>
-                    <nav class="nav-sidebar">
-                        <ul class="nav-sidebar__list">
-                            <li class="nav-sidebar__minilist-item">
-                                <div class="nav-sidebar__item-img">
-                                    <img src="/asset/images/product/ca_phe_cappuccino.jpg" alt="" class="img-sidebar__minilist">
-                                </div>
-                                <div class="nav-sidebar__item-content">
-                                    <a class="minilist-info__products">Món ăn nổi bật</a>
-                                    <div class="minilist_price__box">
-                                        <!-- <div class="minilist-price_products">
-                                            300.000đ
-                                        </div>
-                                        <del class="minilist-price__compare">
-                                            3.000.000đ
-                                        </del> -->
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="nav-sidebar__minilist-item">
-                                <div class="nav-sidebar__item-img">
-                                    <img src="/asset/images/product/ca_phe_cappuccino.jpg" alt=""
-                                        class="img-sidebar__minilist">
-                                </div>
-                                <div class="nav-sidebar__item-content">
-                                    <a class="minilist-info__products">Món ăn ưa chuộng</a>
-                                    <div class="minilist_price__box">
-                                        <!-- <div class="minilist-price_products">
-                                            400.000đ
-                                        </div>
-                                        <del class="minilist-price__compare">
-                                            1.000.000đ
-                                        </del> -->
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="nav-sidebar__minilist-item">
-                                <div class="nav-sidebar__item-img">
-                                    <img src="/asset/images/product/ca_phe_cappuccino.jpg" alt=""
-                                        class="img-sidebar__minilist">
-                                </div>
-                                <div class="nav-sidebar__item-content">
-                                    <a class="minilist-info__products">Món ăn mới</a>
-                                    <div class="minilist_price__box">
-                                        <!-- <a class="minilist-price_products">
-                                            Liên Hệ
-                                        </a>
-                                        <del class="minilist-price__compare">
-
-                                        </del> -->
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- <li class="nav-sidebar__minilist-item">
-                                <div class="nav-sidebar__item-img">
-                                    <img src="../images/product/fruit_cream_puff.jpg" alt=""
-                                        class="img-sidebar__minilist">
-                                </div>
-                                <div class="nav-sidebar__item-content">
-                                    <a class="minilist-info__products">Fruit Cream Puff</a>
-                                    <div class="minilist_price__box">
-                                        <div class="minilist-price_products">
-                                            399.000đ
-                                        </div>
-                                        <del class="minilist-price__compare">
-                                            400.000đ
-                                        </del>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-sidebar__minilist-item">
-                                <div class="nav-sidebar__item-img">
-                                    <img src="../images/product/espresso_con_panna.jpg" alt=""
-                                        class="img-sidebar__minilist">
-                                </div>
-                                <div class="nav-sidebar__item-content">
-                                    <a class="minilist-info__products">Espresso Con Panna</a>
-                                    <div class="minilist_price__box">
-                                        <div class="minilist-price_products">
-                                            199.000đ
-                                        </div>
-                                        <del class="minilist-price__compare">
-                                            250.000đ
-                                        </del>
-                                    </div>
-                                </div>
-                            </li> -->
-
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="main-sidebar-price">
-                    <div class="sidebar-title">
-                        <div class="sidebar-title__img">
-                            <!-- <img src="../products/images/cake-aside-title.png" alt=""> -->
-                        </div>
-                        <!-- <div class="price__icon">
-                            <i class="fa-solid fa-sack-dollar"></i>
-                        </div> -->
-                        <h2 class="title-menu">
-                            KHOẢNG GIÁ
-                        </h2>
-                    </div>
-                    <nav class="nav-sidebar">
-                        <ul class="nav-sidebar__list">
-                            <li class="nav-sidebar__price-item">
-                                <input type="checkbox" id="under_100k" class="input-price">
-                                <label for="under_100k" class="label-price">Giá dưới 100.000đ</label>
-                            </li>
-
-                            <li class="nav-sidebar__price-item">
-                                <input type="checkbox" id="100-300" class="input-price">
-                                <label for="100-300" class="label-price">100.000đ - 300.000đ</label>
-                            </li>
-
-                            <li class="nav-sidebar__price-item">
-                                <input type="checkbox" id="300-500" class="input-price">
-                                <label for="300-500" class="label-price">300.000đ - 500.000đ</label>
-                            </li>
-
-                            <li class="nav-sidebar__price-item">
-                                <input type="checkbox" id="500-10000" class="input-price">
-                                <label for="500-1000" class="label-price">500.000đ - 1.000.000đ </label>
-                            </li>
-
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
-
             <div class="main-container">
                 <h1 class="product-main__heading">Tất Cả Sản Phẩm</h1>
                 <div class="product-main__sort">
@@ -352,46 +176,179 @@
 
                     </div>
                 </div>
+
                 <div class="product-main__view">
+                      <div class="product-view__item">
+                        <div class="product-item__top">
+                            <div class="product-view__item-img">
+                                <img src="asset/images/id4.jpg" alt="" class="product__img">
+                            </div>
+
+                        </div>
+                        <div class="product-view__item-info">
+                            <p class="info__id" style="display: none;">26</p>
+                            <div class="info__name">
+                             Bánh Kem Korea  
+                            </div>
+
+                            <div class="product__buy">
+                                <div class="info__price">
+                                    300.000đ
+                                </div>
+                                <button type="button" class="product__btn">
+                                    Đặt Hàng
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
                     <div class="product-view__item">
                         <div class="product-item__top">
                             <div class="product-view__item-img">
-                                <img src="./asset/images/product/green_tea.jpg" alt="" class="product__img">
+                                <img src="asset/images/id14.jpg" alt="" class="product__img">
                             </div>
-                            <div class="product__buy">
-                                <button type="button" class="product__btn">
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                </button>
-                            </div>
+
                         </div>
                         <div class="product-view__item-info">
-                             <p class="info__id" style="display: none;">14</p>
+                            <p class="info__id" style="display: none;">27</p>
                             <div class="info__name">
-                                Thienthanh
+                                          Bánh Kem Lốc Xoáy
                             </div>
-                            <div class="info__price">
+
+                            <div class="product__buy">
+                                <div class="info__price">
                                     300.000đ
+                                </div>
+                                <button type="button" class="product__btn">
+                                    Đặt Hàng
+                                </button>
                             </div>
+
                         </div>
-                    </div>                   
+                    </div>
+
+                    <div class="product-view__item">
+                        <div class="product-item__top">
+                            <div class="product-view__item-img">
+                                <img src="asset/images/id13.jpg" alt="" class="product__img">
+                            </div>
+
+                        </div>
+                        <div class="product-view__item-info">
+                            <p class="info__id" style="display: none;">28</p>
+                            <div class="info__name">
+                                Bánh Kem Dâu Hồng (Pink Strawbery)  
+                            </div>
+
+                            <div class="product__buy">
+                                <div class="info__price">
+                                    300.000đ
+                                </div>
+                                <button type="button" class="product__btn">
+                                    Đặt Hàng
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+                    <div class="product-view__item">
+                        <div class="product-item__top">
+                            <div class="product-view__item-img">
+                                <img src="asset/images/id10.jpg" alt="" class="product__img">
+                            </div>
+
+                        </div>
+                        <div class="product-view__item-info">
+                            <p class="info__id" style="display: none;">29</p>
+                            <div class="info__name">
+                              Bánh Kem Lumos Passion Fruit
+                            </div>
+
+                            <div class="product__buy">
+                                <div class="info__price">
+                                    300.000đ
+                                </div>
+                                <button type="button" class="product__btn">
+                                    Đặt Hàng
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+                    <div class="product-view__item">
+                        <div class="product-item__top">
+                            <div class="product-view__item-img">
+                                <img src="asset/images/id8.jpg" alt="" class="product__img">
+                            </div>
+
+                        </div>
+                        <div class="product-view__item-info">
+                            <p class="info__id" style="display: none;">30</p>
+                            <div class="info__name">
+                                Bánh Kem Lumos Blue 
+                            </div>
+
+                            <div class="product__buy">
+                                <div class="info__price">
+                                    300.000đ
+                                </div>
+                                <button type="button" class="product__btn">
+                                    Đặt Hàng
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="product-view__item">
+                        <div class="product-item__top">
+                            <div class="product-view__item-img">
+                                <img src="asset/images/id11.jpg" alt="" class="product__img">
+                            </div>
+
+                        </div>
+                        <div class="product-view__item-info">
+                            <p class="info__id" style="display: none;">31</p>
+                            <div class="info__name">
+                             Bánh Kem Lumos Strawbery
+                            </div>
+
+                            <div class="product__buy">
+                                <div class="info__price">
+                                    300.000đ
+                                </div>
+                                <button type="button" class="product__btn">
+                                    Đặt Hàng
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                   
                 </div>
             </div>
 
         </div>
-        <!-- chuyen trang -->
         <div class="product-page">
             <div class="page-1">
-                <a href="" class="page-text">
+                <a href="./product1.html" class="page-text">
                     <p>1</p>
                 </a>
             </div>
             <div class="page-2">
-                <a href="" class="page-text">
+                <a href="./product2.html" class="page-text">
                     <p>2</p>
                 </a>
             </div>
             <div class="page-next">
-                <a href="" class="page-text">
+                <a href="./product2.html" class="page-text">
                     <p><i class="fa-solid fa-angles-right"></i></p>
                 </a>
             </div>
@@ -406,7 +363,7 @@
     <footer class="footer">
         <div class="grid wide">
             <div class="row">
-                <div class="col l-3 l-o-3">
+                <div class="col l-3 m-12 c-12 l-o-1">
                     <div class="footer__widget">
                         <h4 class="widget__heading">Liên hệ</h4>
                         <div class="widget__address">
@@ -440,18 +397,18 @@
                     </div>
                 </div>
 
-                <div class="col l-3">
+                <div class="col l-3 m-12 c-12 l-o-4">
                     <div class="footer__sale">
                         <h4 class="sale__heading">Đăng kí nhận thông tin khuyến mãi</h4>
                         <div class="sale__info">
                             <input type="text" class="widget__input" placeholder="Nhập email của bạn">
-                            <button class="widget__btn">Đăng kí</button>
+                        <button class="widget__btn">Đăng kí</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-
+            
+            
         </div>
         <div class="footer__copyfight">
             <span class="copyrignt__text">© bản quyền thuộc về ...</span>
@@ -459,8 +416,8 @@
     </footer>
     <script src="./asset/javacript/main.js"></script>
     <script>
-        window.addEventListener('load',countProduct);
-   </script>
+        window.addEventListener('load', countProduct);
+    </script>
 </body>
 
 </html>
