@@ -112,10 +112,10 @@
 // xoa san pham ra khoi gio hang
     function deleteProduct(e){
         var cartRow=e.parentElement;
-        var cartId=cartRow.getElementsByClassName('cart__body-id')[0];
+        var cartId=cartRow.getElementsByClassName('cart__body-id');
         var AvailableProduct=[];
         AvailableProduct=JSON.parse(window.localStorage.getItem('CartItem'));
-        var index=0;
+        var index;
         for(var i=0;i<AvailableProduct.length;i++){
             if(cartId.innerText===AvailableProduct[i].id){
                 index=i;
