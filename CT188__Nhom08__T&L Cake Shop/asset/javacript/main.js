@@ -29,7 +29,7 @@
             quantityCart: 1
         }
         // thong bao da them san pham
-        alert("Da them san pham: "+NewProduct.title);
+        alert("Đã thêm sản phẩm: "+NewProduct.title+" vào giỏ hàng");
 
         //chưa có storage 
         if(JSON.parse(window.localStorage.getItem('CartItem'))===null){
@@ -66,7 +66,7 @@
             cartRow.classList.add("row");
             var cartRowContent=`
                 <p class="cart__body-id">${AvailableProduct[i].id}</p>
-                <div class="col l-3 m-4 c-4">
+                <div class="img__cart col l-3 m-4 c-3">
                 <img src="${AvailableProduct[i].imgSr}" alt="" class="cart__img">
                 </div>
                 <div class="cart__body-name col l-3 m-2 c-2">

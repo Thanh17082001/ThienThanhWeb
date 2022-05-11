@@ -26,12 +26,17 @@
     overflow: auto;
 
 }
+.img__cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .cart__img{
     width: 40%;
-    margin-top: 20px;
     border: 1px solid #ebebeb;
     border-radius: 3px;
     padding: 5px;
+    margin-top: 12px;
 }
 .cart__body-name{
     display: flex;
@@ -55,7 +60,9 @@
 .cart__body-icon{
     font-size: 2rem;
     cursor: pointer;
-
+}
+.cart__body-icon:hover{
+    color: var(--primary);
 }
 .cart__body-id{
     display: none;
