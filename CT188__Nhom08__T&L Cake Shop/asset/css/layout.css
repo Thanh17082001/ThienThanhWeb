@@ -61,6 +61,9 @@
     width: 40px;
     height: 90%;
     border-left: 1px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .search__icon{
@@ -107,7 +110,7 @@
 }
 .midhead__img{
     margin-right: auto;
-
+    margin-bottom: 15px;
 }
 .midhead__nav{
     text-align: center;
@@ -240,25 +243,38 @@
     overflow: hidden;
 }
 .bottomhead-logo{
-    position: absolute;
-    top:40%;
-    right: 40%;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-    font-size: 50px;
-    color: black;
-    border: 3px solid black;
-    height: 200px;
-    background-color: rgba(247, 247, 247, 0.815);
-    translate:-50%,0;
-    z-index: 10;
+    
+        position: absolute;
+        top:40%;
+        right: 40%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+       flex-direction: column;
+        font-size: 22px;
+        color: black;
+        
+         height: 200px;
+         background-color: rgba(255, 255, 255, 0.297);
+         translate:-50%,0;
+         z-index: 10;
+         transform: translateY(-70px);
+         left: 0;
+    
 }
-.logo-text{
-    margin: 30px;
+.bottomhead-logo span{
+    font-weight: bold;
+    font-style:italic 
 }
-
+.logo-text2, .logo-text1{
+    padding: 10px;
+}
+.logo-text2{
+    font-size: 17px;
+    /* margin-top: 30px; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
 .bottomhead__img{
    width: 100%;
     height: 480px;
@@ -470,7 +486,7 @@
 }
 .nav-mobile__close{
     position: absolute;
-    top: 15px;
+    top: 5px;
     right: 20px;
     color: var(--text);
     font-size: 3rem;
@@ -564,11 +580,6 @@
     }
 }
 
-/* tablet */
-@media (min-width: 740px) and (max-width: 1023px){
-
-}
-
 /*  Mobile */
 @media (max-width: 739px){
     .header__tophead{
@@ -577,6 +588,7 @@
     .midhead__img{
        width: 192px;
        margin-right: 0;
+       
     }
     .midhead-mobile__icon{
         margin:0 12px 0 10px;
@@ -626,6 +638,21 @@
     .footer{
         padding: 12px 12px;
     }
+}
+.top{
+    z-index: 10;
+    position: fixed;
+    color: #F05454;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgba(237, 237, 237, 0.372);
+    padding: 10px;
+    
+}
+.top-icon{
+    font-size: 50px;
 }
 
 @keyframes fadeIn{

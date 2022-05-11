@@ -91,7 +91,7 @@
 }
 .cart__bot-name:hover{
     cursor: pointer;
-    border: 2px solid var(--primary);
+    border: 1px solid var(--primary);
     border-radius: 3px;
     background-color: var(--white);
 }

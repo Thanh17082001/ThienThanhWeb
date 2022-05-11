@@ -52,3 +52,6 @@
 	cursor: pointer;
 	margin-top: 1rem;
 }
+.account__login:hover, .account__register:hover{
+	text-decoration: none;
+}

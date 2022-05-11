@@ -1,3 +1,4 @@
+/* Nhom 8 - Tran Thi Thanh Thanh B2005691 (product.css) */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -432,6 +433,7 @@ li:hover .sort-item {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    padding-bottom: 5px;
 
 }
 .info-bottom{
@@ -444,19 +446,22 @@ li:hover .sort-item {
 
 .info__price {
     font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #F05454;
 }
 
 .product__buy{
-    margin-top: 20px;
   display:flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:start;
+  flex-direction: column;
+  
 }
 .product-price {
     color: #CA965C;
 }
 .product__btn{
-    padding: 4px 12px;
+    padding: 8px 12px;
     color: #fff;
     border-radius: 6px;
 }
@@ -525,5 +530,12 @@ li:hover .sort-item {
 @media (max-width: 739px){
     .product-view__item{
         max-width: 50%;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .product-view__item{
+        max-width: 30%;
     }
 }

@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/css/base.css">
     <link rel="stylesheet" href="asset/css/grid.css">
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/layout.css">
-    <link rel="stylesheet" href="asset/css/contact.css">
+    <link rel="stylesheet" href="asset/css/form.css">
     <link rel="stylesheet" href="asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
-    <title>Contact</title>
+    <title>Login</title>
 </head>
+
+<!-- Nhom 8 - Tran Thi Thanh Thanh B2005691 (Login.html) -->
+
 <body>
     <!-- header -->
     <header class="header">
@@ -77,8 +79,8 @@
                          </label>
                      </nav>
 
-                    <img src="./asset/images/Logo.jpg" alt="" class="midhead__img">
-
+                     <img src="./asset/images/T&L logo.png" alt="" class="midhead__img">
+                    
                     <nav class="midhead__nav">
                         <ul class="midhead__list">
                             <li class="midhead__item">
@@ -135,58 +137,50 @@
                 </div>
             </div>
         </div>
+
     </header>
-    <!-- Body -->
-    <section class="contact">
-    	<div class="container">
-    		<div class="row mt-4 mb-4">
-                <div class="col-lg-6 col-md-6 col-sm-12 contact__self">
-                    <h3>
-                        Liên hệ với chúng tôi
-                    </h3>
-                    <p>
-                        Để không ngừng nâng cao chất lượng dịch vụ và đáp ứng tốt hơn nữa các yêu cầu sử dụng dịch vụ của Quý khách, chúng tôi mong muốn nhận được các thông tin phản hồi. Nếu Quý khách có bất kỳ thắc mắc hoặc đóng góp nào, xin vui lòng liên hệ với chúng tôi theo thông tin dưới đây. Chúng tôi sẽ phản hồi lại Quý khách trong thời gian sớm nhất.
-                    </p>
-                    <h3>
-                        Thông tin liên hệ
-                    </h3>
-                    
-                    <ul class="contact__self-list">
-                        <li class="contact__self-item">
-                            <a class="contact__self-link" href="#">cakefood.com</a>
-                        </li>
-                        <li class="contact__self-item">
-                            <a class="contact__self-link" href="#">SĐT: 00998899</a>
-                        </li>
-                        <li class="contact__self-item">
-                            <a class="contact__self-link" href="#">Email:thienthanh17082001@gmail.com</a>
-                        </li>
-                        <li class="contact__self-item">
-                            <a class="contact__self-link" href="#">Địa chỉ: Đường 3/2, Phường An Khánh, Quận Ninh Kiều, Thành Phố Cần Thơ</a>
-                        </li>
-                    </ul>
+    <!-- body -->
+    <div class="main">
+
+        <form action="" method="POST" class="form" id="form-1">
+          <div class="option">
+            <h3 class="heading">Đăng nhập</h3>
+            <a href="./register.html" class="option__link">Đăng kí</a>
+          </div>
+    
+          <div class="spacer"></div>
+    
+          
+    
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="text" placeholder="VD: abc@gmail.com" class="form-control">
+            <span class="form-message"></span>
+          </div>
+       
+    
+          <div class="form-group">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="password" class="form-label">Hoặc đăng nhập bằng</label>
+            <div class="login__social">
+                <div class="login__facebook">
+                    <i class="fa-brands fa-facebook-square login__icon"></i>
+                    <p class="facebook__title">Facebook</p>
                 </div>
-    			<div class="col-lg-6 col-md-6 col-sm-12 contact__regist">
-    				<h3>
-    					Đăng ký tư vấn miễn phí
-    				</h3>
-
-    				<p>Quý khách vui lòng để lại thông tin để nhân viên tư vấn điện lại cho bạn sớm nhất!</p>
-
-    				<form>
-					    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Họ tên của bạn...">
-
-					    <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email của bạn...">
-
-					    <input type="number" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Số điện thoại...">
-						
-						<textarea name="" id="" cols="200" rows="15" placeholder="Nội dung cần tư vấn..."></textarea> 
-					  <button type="submit">Gửi liên hệ</button>
-					</form>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+                <div class="login__google">
+                    <i class="fa-brands fa-google login__icon"></i> 
+                    <p class="google__title">Google</p>
+                </div>
+            </div>
+          </div>
+          
+    
+          <button class="form-submit">Đăng nhập</button>
+    </div>
     <!-- footer -->
     <footer class="footer">
         <div class="grid wide">
@@ -239,7 +233,7 @@
             
         </div>
         <div class="footer__copyfight">
-            <span class="copyrignt__text">© bản quyền thuộc về ...</span>
+            <span class="copyrignt__text">© Bản quyền thuộc về T&L Cake Shop</span>
         </div>
     </footer>
     <script src="./asset/javacript/main.js"></script>
