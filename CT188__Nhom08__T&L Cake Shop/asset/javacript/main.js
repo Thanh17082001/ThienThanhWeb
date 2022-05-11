@@ -66,7 +66,7 @@
             cartRow.classList.add("row");
             var cartRowContent=`
                 <p class="cart__body-id">${AvailableProduct[i].id}</p>
-                <div class="img__cart col l-3 m-4 c-3">
+                <div class="img__cart col l-3 m-4 c-4">
                 <img src="${AvailableProduct[i].imgSr}" alt="" class="cart__img">
                 </div>
                 <div class="cart__body-name col l-3 m-2 c-2">

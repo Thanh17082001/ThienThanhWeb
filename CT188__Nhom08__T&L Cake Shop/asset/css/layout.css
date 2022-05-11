@@ -652,8 +652,8 @@
         padding-left: 10px;
     }
     .cart__img{
-        width: 100%;
-        margin: 12px 0 0 12px;
+        width: 75%;
+        margin: 12px 0 0 25px;
     }
     .cart__price{
         font-size: 1.2rem;
