@@ -1,3 +1,5 @@
+// Nguoi thuc hien Nguyen Thien Thanh
+
 // kiem tra co san pham trong cart chua
     function isProductInCart(item,Arrayproduct){
         var index=-1;

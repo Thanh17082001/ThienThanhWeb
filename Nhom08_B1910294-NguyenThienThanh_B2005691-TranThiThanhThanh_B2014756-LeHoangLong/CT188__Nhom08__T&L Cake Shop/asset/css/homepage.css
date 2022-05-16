@@ -1,4 +1,4 @@
-
+/* Nguoi thuc hien Nguyen Thien Thanh */
 /* san pham noi bat */
 .main{
     display: block;
@@ -103,6 +103,12 @@
     font-weight: 100;
     color: rgb(151, 148, 148);
     margin: 4px 0;
+    line-height: 1.8rem;
+    max-height: 3.2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 .info__price{
     font-size: 1.8rem;

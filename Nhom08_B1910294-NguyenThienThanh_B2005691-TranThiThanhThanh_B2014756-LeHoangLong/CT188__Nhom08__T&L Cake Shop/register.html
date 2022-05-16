@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/css/base.css">
     <link rel="stylesheet" href="asset/css/grid.css">
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/layout.css">
-    <link rel="stylesheet" href="asset/css/contact.css">
+    <link rel="stylesheet" href="asset/css/form.css">
     <link rel="stylesheet" href="asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
-    <title>Contact</title>
+    <title>Register</title>
 </head>
+
+<!-- Nhom 8 - Tran Thi Thanh Thanh B2005691 (register.html) -->
+
 <body>
     <!-- header -->
     <header class="header">
@@ -80,6 +82,8 @@
                      <a href="./index.html" class="logo__link">
                         <img src="./asset/images/T&L logo.png" alt="" class="midhead__img">
                     </a>
+
+
                     <nav class="midhead__nav">
                         <ul class="midhead__list">
                             <li class="midhead__item">
@@ -108,12 +112,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="midhead__item">
-                                <a href="" class="midhead__link">
-                                    <i class="fa-solid fa-circle-info"></i>
-                                    Giới thiệu
-                                </a>
-                            </li>
+                            
                            
                             <li class="midhead__item">
                                 <a href="./contact.html" class="midhead__link">
@@ -137,57 +136,60 @@
             </div>
         </div>
     </header>
-    <!-- Body -->
-    <section class="contact">
-    	<div class="container">
-    		<div class="row mt-4 mb-4">
-                <div class="col-lg-6 col-md-6 col-sm-12 contact__self">
-                    <h3>
-                        Liên hệ với chúng tôi
-                    </h3>
-                    <p>
-                        Để không ngừng nâng cao chất lượng dịch vụ và đáp ứng tốt hơn nữa các yêu cầu sử dụng dịch vụ của Quý khách, chúng tôi mong muốn nhận được các thông tin phản hồi. Nếu Quý khách có bất kỳ thắc mắc hoặc đóng góp nào, xin vui lòng liên hệ với chúng tôi theo thông tin dưới đây. Chúng tôi sẽ phản hồi lại Quý khách trong thời gian sớm nhất.
-                    </p>
-                    <h3>
-                        Thông tin liên hệ
-                    </h3>
-                    
-                    <ul class="contact__self-list">
-                        <li class="contact__self-item">
-                            <a class="contact__self-link" href="#">cakefood.com</a>
-                        </li>
-                        <li class="contact__self-item">
-                            <a class="contact__self-link" href="#">SĐT: 00998899</a>
-                        </li>
-                        <li class="contact__self-item">
-                            <a class="contact__self-link" href="#">Email:thienthanh17082001@gmail.com</a>
-                        </li>
-                        <li class="contact__self-item">
-                            <a class="contact__self-link" href="#">Địa chỉ: Đường 3/2, Phường An Khánh, Quận Ninh Kiều, Thành Phố Cần Thơ</a>
-                        </li>
-                    </ul>
-                </div>
-    			<div class="col-lg-6 col-md-6 col-sm-12 contact__regist">
-    				<h3>
-    					Đăng ký tư vấn miễn phí
-    				</h3>
+    <!-- body -->
+    <div class="main">
 
-    				<p>Quý khách vui lòng để lại thông tin để nhân viên tư vấn điện lại cho bạn sớm nhất!</p>
-
-    				<form>
-					    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Họ tên của bạn...">
-
-					    <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email của bạn...">
-
-					    <input type="number" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Số điện thoại...">
-						
-						<textarea name="" id="" cols="200" rows="15" placeholder="Nội dung cần tư vấn..."></textarea> 
-					  <button type="submit">Gửi liên hệ</button>
-					</form>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+        <form action="" method="POST" class="form" id="form-1">
+            <div class="option">
+            <h3 class="heading">Đăng ký</h3>
+            <a href="./Login.html" class="option__link">Đăng nhập</a>
+          </div>
+    
+          <div class="spacer"></div>
+    
+          <div class="form-group">
+            <label for="fullname" class="form-label">Họ và tên </label>
+            <input id="fullname" name="fullname" type="text" placeholder="Full name" class="form-control">
+            <span class="form-message"></span>
+          </div>
+    
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="text" placeholder="VD: abc@gmail.com" class="form-control">
+            <span class="form-message"></span>
+          </div>
+       
+    
+          <div class="form-group">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+            <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password"
+              class="form-control">
+            <span class="form-message"></span>
+          </div>
+    
+          <div class="form-group form-radio">
+            <label class="form-label">
+              <input type="checkbox" name="gender" id="#gender-male" value="male">
+              <span class="radio-name">Male</span>
+            </label>
+            <label class="form-label">
+              <input type="checkbox" name="gender" id="#gender-female" value="female">
+              <span class="radio-name">Female</span>
+            </label>
+            <label class="form-label">
+              <input type="checkbox" name="gender" id="#gender-other" value="other">
+              <span class="radio-name">other</span>
+            </label>
+            <span class="form-message"></span>
+          </div>
+    
+          <button class="form-submit">Đăng ký</button>
+    </div>
     <!-- footer -->
     <footer class="footer">
         <div class="grid wide">
@@ -243,6 +245,7 @@
             <span class="copyrignt__text">© Bản quyền thuộc về T&L Cake Shop</span>
         </div>
     </footer>
+    <!-- javacript -->
     <script src="./asset/javacript/main.js"></script>
     <script>
         window.addEventListener('load',countProduct);

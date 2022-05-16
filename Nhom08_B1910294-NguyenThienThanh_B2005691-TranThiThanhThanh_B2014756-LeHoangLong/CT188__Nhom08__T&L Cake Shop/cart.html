@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/css/base.css">
     <link rel="stylesheet" href="asset/css/grid.css">
-    <link rel="stylesheet" href="asset/css/layout.css">
-    <link rel="stylesheet" href="asset/css/form.css">
+    <link rel="stylesheet" href="asset/css/cart.css">
     <link rel="stylesheet" href="asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
-    <title>Register</title>
+    <link rel="stylesheet" href="asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/product.css">
+    <link rel="stylesheet" href="asset/css/layout.css">
+    <title>Cart</title>
 </head>
-
-<!-- Nhom 8 - Tran Thi Thanh Thanh B2005691 (register.html) -->
-
+<!-- Nguoi thuc hien Nguyen Thien Thanh -->
 <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" >
         <div class="header__tophead">
             <div class="grid wide">
                 <div class="tophead__container">
@@ -54,15 +54,16 @@
                         <div class="mobile__search">
                             <div class="mobile-search__item">
                                 <input type="text" class="mobile-search__input" placeholder="tìm kiếm sản phẩm"></input>
-                                <i class="fa-solid fa-magnifying-glass mobile-search__icon" ></i>
+                                <i class="fa-solid fa-magnifying-glass mobile-search__icon"></i>
                             </div>
                         </div>
+
                          <ul class="mobile-nav__list">
                             <li class="mobile-list__item">
                                 <a href="./index.html" class="mobile-list__link">Trang chủ</a>
                             </li>
                             <li class="mobile-list__item">
-                                <a href="./product.html" class="mobile-list__link">Sản phẩm</a>
+                                <a href="./product1.html" class="mobile-list__link">Sản phẩm</a>
                             </li>
                             <li class="mobile-list__item">
                                 <a href="./contact.html" class="mobile-list__link">Liên hệ</a>
@@ -79,11 +80,10 @@
                          </label>
                      </nav>
 
+                     
                      <a href="./index.html" class="logo__link">
                         <img src="./asset/images/T&L logo.png" alt="" class="midhead__img">
                     </a>
-
-
                     <nav class="midhead__nav">
                         <ul class="midhead__list">
                             <li class="midhead__item">
@@ -112,12 +112,6 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="midhead__item">
-                                <a href="" class="midhead__link">
-                                    <i class="fa-solid fa-circle-info"></i>
-                                    Giới thiệu
-                                </a>
-                            </li>
                            
                             <li class="midhead__item">
                                 <a href="./contact.html" class="midhead__link">
@@ -127,79 +121,83 @@
                             </li>
                         </ul>
                     </nav>
-
                      <div class="midhead__cart">
                         <a href="./cart.html" class="cart__link" title="Giỏ hàng">
                             <i class="fa-solid fa-cart-shopping cart__icon"></i>
                         </a>
                         <span class="cart__count">0</span>
-                        
                      </div>
-
-                     
                 </div>
             </div>
         </div>
-    </header>
-    <!-- body -->
-    <div class="main">
 
-        <form action="" method="POST" class="form" id="form-1">
-            <div class="option">
-            <h3 class="heading">Đăng ký</h3>
-            <a href="./Login.html" class="option__link">Đăng nhập</a>
-          </div>
-    
-          <div class="spacer"></div>
-    
-          <div class="form-group">
-            <label for="fullname" class="form-label">Họ và tên </label>
-            <input id="fullname" name="fullname" type="text" placeholder="Full name" class="form-control">
-            <span class="form-message"></span>
-          </div>
-    
-          <div class="form-group">
-            <label for="email" class="form-label">Email</label>
-            <input id="email" name="email" type="text" placeholder="VD: abc@gmail.com" class="form-control">
-            <span class="form-message"></span>
-          </div>
-       
-    
-          <div class="form-group">
-            <label for="password" class="form-label">Mật khẩu</label>
-            <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
-            <span class="form-message"></span>
-          </div>
-          <div class="form-group">
-            <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
-            <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password"
-              class="form-control">
-            <span class="form-message"></span>
-          </div>
-    
-          <div class="form-group form-radio">
-            <label class="form-label">
-              <input type="checkbox" name="gender" id="#gender-male" value="male">
-              <span class="radio-name">Male</span>
-            </label>
-            <label class="form-label">
-              <input type="checkbox" name="gender" id="#gender-female" value="female">
-              <span class="radio-name">Female</span>
-            </label>
-            <label class="form-label">
-              <input type="checkbox" name="gender" id="#gender-other" value="other">
-              <span class="radio-name">other</span>
-            </label>
-            <span class="form-message"></span>
-          </div>
-    
-          <button class="form-submit">Đăng ký</button>
-    </div>
-    <!-- footer -->
+    </header>
+
+    <!-- cart -->
+    <main class="main">
+        <section class="main__cart">
+            <div class="grid wide">
+                <div class="main-cart__cotainer">
+                    <!-- cart header -->
+                    <div class="cart__header">
+                            <div class="row row-nowrap">
+                                <p class="main-cart__text col l-3 ">Hình ảnh</p>
+                                <p class="main-cart__text col l-3 ">Tên sản phẩm</p>
+                                <p class="main-cart__text col l-2 ">Đơn giá</p>
+                                <p class="main-cart__text col l-2 ">Số lượng</p>
+                                <p class="main-cart__text col l-2 ">Xóa</p>
+                            </div>
+                    </div>
+                    <!-- cart body -->
+                    <div class="cart__body"> 
+                            <!-- chua noi dung cart -->
+                        
+                        
+                        <!-- <div class="row">
+                            <div class="col l-2">
+                                <img src="./asset/images/product1.jpg" alt="" class="cart__img">
+                            </div>
+                            <div class="cart__body-name col l-2">
+                                <p class="cart__body-text">Bánh kem thơm ngon</p>
+                            </div>
+                            <div class="cart__body-name col l-2">
+                                <p class="cart__price">500.000đ</p>
+                            </div>
+                            <div class="cart__body-name col l-2">
+                                <input aria-label="quantity" class="cart__body-input "min="0" name ="cart__input"type="number" value="1" >
+                            </div>
+                            <div class="cart__body-name col l-2">
+                                <p class="cart__totall">500.000đ</p>
+                            </div>
+                            <div class="cart__body-name col l-2">
+                                <i class="fa-solid fa-trash-can cart__body-icon"></i>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- cart bottom -->
+                    <div class="cart__bot">
+                        <div class="row">
+                            <div class="total col l-5 l-o-6 m-6 c-6 m-0-2 c-o-3">
+                                <div class="cart__bot-total ">
+                                    <span class="cart__bot-total-name">Tổng tiền:</span> 
+                                    <span class="cart__bot-price"></span>
+                                </div>
+                            </div>
+                            <div class="col l-3 l-o-8 m-10 m-o-1 c-10 c-o-1">
+                                <p class="cart__bot-name">Tiến hành thanh toán</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- phan footer -->
     <footer class="footer">
         <div class="grid wide">
             <div class="row">
-                <div class="col l-3 m-12 c-12 l-o-1">
+                <div class="col l-3 l-o-1">
                     <div class="footer__widget">
                         <h4 class="widget__heading">Liên hệ</h4>
                         <div class="widget__address">
@@ -233,7 +231,7 @@
                     </div>
                 </div>
 
-                <div class="col l-3 m-12 c-12 l-o-4">
+                <div class="col l-3 l-o-4">
                     <div class="footer__sale">
                         <h4 class="sale__heading">Đăng kí nhận thông tin khuyến mãi</h4>
                         <div class="sale__info">
@@ -249,11 +247,18 @@
         <div class="footer__copyfight">
             <span class="copyrignt__text">© Bản quyền thuộc về T&L Cake Shop</span>
         </div>
-    </footer>
-    <!-- javacript -->
-    <script src="./asset/javacript/main.js"></script>
-    <script>
-        window.addEventListener('load',countProduct);
-   </script>
+</footer>
+<script src="./asset/javacript/main.js"></script>
+<script>
+    var Price=document.querySelector('.cart__bot-price')
+        
+            Price.innerText=Number(Price.innerText).toLocaleString('de-DE', {style : 'currency' , currency: 'VND'})
+</script>
+<script>
+     window.addEventListener('load',addProductToCart,false);
+     window.addEventListener('load',countProduct);
+     window.addEventListener('load',CartTotal);
+     
+</script>
 </body>
 </html>
