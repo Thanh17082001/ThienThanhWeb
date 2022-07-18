@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .container{
+    width: 100%;
+    margin: 20px auto;
+    padding-top: 20px;
+    min-width: 30px;
+  } */
+
+body{
+    color: #000000;
+}
+.page__heading{
+    text-align: center;
+    padding: 17.5px;
+    margin-bottom: 25px;
+}
+.title{
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+.woocommerce-breadcrumb{
+    font-size: 12px;
+    color: #777;
+}
+a{
+    text-decoration: none;
+    color: #777;
+}
+.page__content{
+    display: block;
+    box-sizing: border-box;
+}
+p{
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.dong-ho-nam-banner{
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+blockquote.banner-note{
+    /* float: left; */
+    min-height: 50px;
+    background: #fcfcfc url(https://donghohaitrieu.com/wp-content/themes/legenda/images/quote.png) 
+                        no-repeat 10px 10px;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+blockquote {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+/* Thuong hieu */
+.hover08 {
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+}
+.hover08:hover {
+    filter: grayscale(0%);
+    transition: .3s ease-in-out;
+}
+img.alignleft {
+    margin: 5px 33px 25px 0;
+    float: left;
+    
+}
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    display: table;
+    margin-bottom: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-color: grey;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    margin: 0 auto;
+}
+table td {
+    padding: 4px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+/* Thanh cong cu lua chon san pham*/
+.toolbar {
+    margin: 20px 0;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.toolbar__left{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.result-count {
+    display: inline-block;
+    line-height: 28px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+.orderby {
+    border: 1px solid #ebebeb;
+    padding-left: 10px;
+    color: #646363;
+    font-size: 16px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.view-switcher {
+    display: flex;
+    padding-left: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.view-switcher div{
+    padding-left: 15px;
+    /* margin-top: -5px; */
+}
+.view-switcher div i{
+    color: #8e8e8e;
+    font-size: 24px;
+}
+.view-switcher div i:hover {
+    color: #990000;
+}
+.woocommerce-pagination li{
+    display: flex;
+    list-style: none;
+}
+.page-numbers {
+    list-style-type: none;
+    display: flex;
+}
+.page-number {
+    border: 1px solid gray;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    line-height: 21px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.dots {
+    border: none;
+}
+.current {
+    color: #990000;
+    border: 1px solid #990000;
+}
+.page-number:hover{
+    color: #990000;
+    border: 1px solid #990000;
+}
+
+.dots:hover{
+    border: none;  
+} */
+/* San pham */
+.products-loop {
+    margin-top: 150px;
+}
+.col-item{
+    text-align: center;
+    box-shadow: 0 2px 17px #ccc;
+    height: 110%;
+    padding-bottom: 20px;
+    overflow: hidden;
+    transition: transform linear 0.4s;
+}
+.col-item:hover {
+    transform: translateY(-5px);
+}
+.col-item img{
+    width: 100%;
+    transition: transform linear 0.4s;
+    /* margin-top: 15px; */
+}
+.item-info{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col-item:hover .item-img{
+    transform: scale(1.05);
+}
+.item-roll-left {
+    display: none;
+    position: relative;
+    top: -25%;
+    width: 25px;
+    height: 35px;
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 37px;
+    border-left: none;
+    font-size: 30px;
+    float: left;
+}
+.fa-angle-left {
+    color: gray;
+    font-style: normal;
+}
+.fa-angle-right {
+    color: gray;
+}
+.item-roll-right {
+    display: none;
+    position: relative;
+    top: -25%;
+    width: 25px;
+    height: 35px;
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    cursor: pointer;
+    line-height: 37px;
+    float: right;
+    border-right: none;
+    font-size: 30px;
+}
+.col-item:hover .item-roll-left{
+    display: block;
+    
+}
+.col-item:hover .item-roll-right{
+    display: block;
+}
+.item-roll-left:hover {
+    background: #ff004c;
+    border: 1px solid #e2e2e2;
+    opacity: 0.5;
+}
+.item-roll-left:hover .fa-angle-left {
+    color: #e2e2e2;
+}
+.item-roll-right:hover .fa-angle-right {
+    color: #e2e2e2;
+}
+.item-roll-right:hover {
+    background: #ff004c;
+    border: 1px solid #e2e2e2;
+    opacity: 0.5;
+}
+.item-id {
+    display: none;
+}
+.item-name {
+    font-size: 15px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    margin: 10px 0;
+    color: var(--text-color);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    width: 80%;
+}
+.item-name-link:hover {
+    color: brown;
+    /* text-decoration:underline; */
+}
+.item-rate-start{
+    margin-left: 30px;
+    margin: 15px ;
+}
+.item-name a{
+    color: #000000;
+}
+.fa-star {
+    color: yellow;
+    
+}
+.item-price {
+    color: gray;
+}
+.row {
+    margin-bottom: 70px;
+}
+.item-img, .item-img-first {
+    display: none;
+}
+.item-img-first {
+    display: block;
+}
+.info__addCart{
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+    overflow: hidden;
+    z-index: 10;
+    transition: linear 0.3s;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.info__addCart::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 415%;
+    background-color: var(--primary-color);
+    transition: 1s;
+    animation: animate 2s linear infinite;
+    top: -3rem;
+    right: 55px;
+    z-index: -1;
+}
+.info__addCart::after{
+    content: "";
+    position: absolute;
+    background-color: var(--backgroup-color);
+    inset: 2.5px;
+    z-index: -1;
+}
+.info__addCart:hover::after{
+    background-color: var(--primary-color);
+}
+.info__addCart:hover{
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    color: #fff;
+    opacity: 1;
+    border: 2px solid #111;
+
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Reponsive */
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+    img.alignleft {
+        margin: 5px 20px 25px 0;
+        float: left; 
+    }
+    .result-count {
+        display: none;
+    }
+    .select-ordering {
+        margin: 10px auto;
+    }
+    .orderby {
+        width: 235px;
+        height: 40px;
+    }
+    .view-large, .view-list {
+        margin-top: 20px;
+    }
+    .woocommerce-pagination li{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .page-numbers {
+        margin-top: 13px;
+    }
+    .page-number {
+        font-size: 16px;
+        padding: 5px;
+        margin-bottom: 0px;
+    }
+    .col-md-4:nth-child(4) {
+        display: none;
+    }
+    
+}
+/* mobile */
+@media (max-width: 767px) {
+    html {
+        background-color: white !important;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .dong-ho-nam-banner {
+        height: 150px;
+    }
+    .banner-note {
+        display: none;
+    }
+    .list-brand {
+        display: flex;
+        overflow-y: hidden;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .toolbar {
+        display: block;
+    }
+    .result-count, .view-switcher{
+        display: none;
+    }
+    .select-ordering {
+        margin: 10px auto;
+    }
+    .orderby {
+        width: 235px;
+        height: 40px;
+    }
+    .woocommerce-pagination li{
+        display: flex;
+        justify-content: center;
+    }
+    .page-numbers {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .page-number {
+        font-size: 14px;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+    .row {
+        margin-bottom: 5px;
+    }
+    .col-6 {
+        margin-bottom: 20px;
+        padding: 4px;
+    }
+    .col-item {
+        text-align: center;
+        height: 100%;
+        box-shadow: none;
+        padding: 0;
+    }
+    .item-rate-start{
+        margin-left: 30px;
+        margin: 10px ;
+    }
+}
