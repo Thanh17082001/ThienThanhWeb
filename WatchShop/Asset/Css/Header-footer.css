@@ -35,7 +35,20 @@ html {
     display:inline-block;
 }
 .cart__icon{
-    font-size: 20px;
+    font-size: 30px;
+    position: relative;
+}
+.cart__count{
+    position: absolute;
+    top: 10px;
+    right: 23px;
+    width: 23px;
+    height: 20px;
+    z-index: 1;
+    color: var(--text-color);
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--backgroup-color);
 }
 .cart__link:hover .cart__icon{
     color: var(--primary-color);

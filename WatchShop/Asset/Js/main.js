@@ -1,3 +1,9 @@
+// count cart
+var countCart=document.querySelector(".cart__count");
+var Arrayproduct=JSON.parse(window.localStorage.getItem('newItem'));
+countCart.innerText=Arrayproduct.length
+
+
 // responsive
 var overlay=document.querySelector(".rps__overlay");
 var btnList=document.querySelector('.rps__btn');
