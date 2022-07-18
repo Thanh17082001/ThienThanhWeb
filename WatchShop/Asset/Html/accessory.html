@@ -845,12 +845,13 @@
             </div>
         </div>
     </footer>
+    <script src="../Js/main.js"></script>
     <script>
         var Price=document.getElementsByClassName('info__price')
         for (var j = 0; j < Price.length; j++) {
             Price[j].innerText = Number(Price[j].innerText).toLocaleString('de-DE', { style: 'currency', currency: 'VND' })
         }
+        window.addEventListener('load',CartCount);
     </script>
-    <script src="../Js/main.js"></script>
 </body>
 </html>

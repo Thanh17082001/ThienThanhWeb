@@ -1,12 +1,10 @@
 // count cart
-var countCart=document.querySelector(".cart__count");
-var Arrayproduct=JSON.parse(window.localStorage.getItem('newItem'));
-countCart.innerText=Arrayproduct.length
+
 
 
 // responsive
 var overlay=document.querySelector(".rps__overlay");
-var btnList=document.querySelector('.rps__btn');
+var btnList=document.querySelector('.rps__list');
 var categorys=document.querySelector('.rps__categorys')
 var btnClose=document.querySelector('.categorys__close')
 // hien thi danh sach
@@ -216,3 +214,8 @@ var pay=document.querySelector('.subtotal__btn');
 pay.addEventListener('click',function(){
     alert("Thanh toán con cặc");
 })
+function CartCount(){
+    var countCart=document.querySelector(".cart__count");
+    var Arrayproduct=JSON.parse(window.localStorage.getItem('newItem'));
+    countCart.innerText=Arrayproduct.length
+}

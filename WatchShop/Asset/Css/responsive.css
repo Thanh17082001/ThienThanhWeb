@@ -121,6 +121,10 @@
     .search__icon{
         display: none;
     }
+    .cart__count{
+        top: 10px;
+        right: 23px;
+    }
     /* accessory */
     .rps__list{
         display: block;
