@@ -1,0 +1,193 @@
+/* Nguoi thuc hien Nguyen Thien Thanh */
+/* san pham noi bat */
+.main{
+    display: block;
+    background-color: #ebebeb;
+}
+.prominent{
+    background-color: #ebebeb;
+    padding: 60px 0;
+}
+
+.prominent__roll{
+    overflow-x:scroll;
+    height: 100%;
+}
+.prominent__title{
+    position: relative;
+    padding: 30px;
+}
+.prominent__headding{
+    display: flex;
+    justify-content: center ;
+    
+}
+.prominent__headding-link{
+    display: block;
+    font-size: 2.1rem;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.prominent__headding-link:hover{
+    color: var(--primary);
+}
+
+
+.prominent__product{
+    background-color: var(--white);
+    /* height: 380px; */
+    width: 100%;
+    margin-top:30px;
+    margin-bottom:30px;
+    position: relative;
+    /* overflow: hidden; */
+    padding:10px 10px 0px 10px;
+    box-shadow: 0 1px 4px #e2dfdf;
+    border-radius: 3px;
+    transition: transform linear 0.1s;
+    will-change: transform;
+    z-index: 10;
+}
+.product__thumbnail{
+    /* height: 320px; */
+    position: relative;
+    overflow: hidden;
+   
+}
+.product__link{
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    cursor: none;
+}
+.product__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height:80% ;
+    background-color: rgba(255,255,255,0.2);
+    z-index: 2;
+    opacity: 0;
+}
+.prominent__product:hover{
+    transform: translateY(-5px);
+}
+.prominent__product:hover .product__overlay{
+    opacity: 1;
+}
+.product__img.img__exception{
+    height: 340px;
+}
+.product__img{
+    z-index: -1;
+    width: 100%;
+    height:260px;
+}
+
+.prominent__product:hover .action__link{
+    transform: translateY(-80px);
+}
+
+.product__info{
+    padding:10px 20px;
+}
+.info__id{
+   display: none;
+}
+.info__name{
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: rgb(151, 148, 148);
+    margin: 4px 0;
+    line-height: 1.8rem;
+    max-height: 3.2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.info__price{
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: var(--primary);
+}
+.info__name:hover{
+    color: var(--primary);
+}
+.product__buy{
+    z-index: 3;
+   padding:10px 0;
+}
+.product__input{
+    width: 50%;
+    height: 20px;
+    padding-right: 8px;
+}
+.product__btn{
+    width: 100%;
+    height: 40px;
+    z-index: 3;
+    background-color: var(--primary);
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 3px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* san pham ua chuong */
+.popularity{
+    background-color: var(--white);
+    padding: 60px 0;
+}
+
+/* san pham moi */
+.product__new{
+    padding-top: 60px;
+}
+.new__product{
+    background-image: url(../images/newbgr.jpg);
+    padding: 40px 0;
+}
+.new__container{
+    display: flex;
+    height: 130px;
+    align-items: center;
+    background-color: rgba(255, 255, 255,0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.new__img{
+    height:80px;
+    border: 5px solid var(--white);
+    border-radius: 5px;
+}
+.new__info{
+    margin-left: 20px;
+}
+.new__name{
+    display: block;
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+}
+.new__price{
+    display: block;
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+}
+.new__update{
+    display: block;
+    font-size: 1.8rem;
+    color: #ccc;
+}
+.new__name:hover{
+    color: var(--primary);
+}
+

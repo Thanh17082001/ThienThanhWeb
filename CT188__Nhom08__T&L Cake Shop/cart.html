@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/base.css">
+    <link rel="stylesheet" href="asset/css/grid.css">
+    <link rel="stylesheet" href="asset/css/cart.css">
+    <link rel="stylesheet" href="asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/product.css">
+    <link rel="stylesheet" href="asset/css/layout.css">
+    <title>Cart</title>
+</head>
+<!-- Nguoi thuc hien Nguyen Thien Thanh -->
+<body>
+    <!-- header -->
+    <header class="header" >
+        <div class="header__tophead">
+            <div class="grid wide">
+                <div class="tophead__container">
+                    <div class="tophead__contact">
+                        <span class="contact__HL">Hotline:</span>
+                        <span class="contact__numberphone">00112233</span>
+                    </div>
+                    <div class="tophead__list">
+                        <div class="tophead__search">
+                            <input type="text" placeholder="Tìm kiếm sản phẩm" class="search__input">
+                            <button class="search__btn">
+                                <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                            </button>
+                        </div>
+                        <div class="tophead__account">
+                            <a href="./Login.html" class="account__login">Đăng nhập</a>
+                            <span class="account__and">&</span>
+                            <a href="./register.html" class="account__register">Đăng kí</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__midhead">
+            <div class="grid wide">
+                <div class="midhead__container">
+                    <!-- responsive  -->
+                    <label for="check-input" class="midhead-mobile__icon">
+                        <i class="fa-solid fa-bars"></i>
+                     </label>
+                     <input type="checkbox" id="check-input" class="midhead-mobile__check">
+                     <label for="check-input" class="midhead-mobile__overlay"></label>
+                     <nav class="midhead-mobile__nav">
+                        <div class="mobile__search">
+                            <div class="mobile-search__item">
+                                <input type="text" class="mobile-search__input" placeholder="tìm kiếm sản phẩm"></input>
+                                <i class="fa-solid fa-magnifying-glass mobile-search__icon"></i>
+                            </div>
+                        </div>
+
+                         <ul class="mobile-nav__list">
+                            <li class="mobile-list__item">
+                                <a href="./index.html" class="mobile-list__link">Trang chủ</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="./product1.html" class="mobile-list__link">Sản phẩm</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="./contact.html" class="mobile-list__link">Liên hệ</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="./register.html" class="mobile-list__link">Đăng kí</a>
+                            </li>
+                            <li class="mobile-list__item">
+                                <a href="./Login.html" class="mobile-list__link">Đăng nhập</a>
+                            </li>
+                         </ul>
+                         <label for="check-input" class="nav-mobile__close">
+                            <i class="fa-solid fa-xmark"></i>
+                         </label>
+                     </nav>
+
+                     
+                     <a href="./index.html" class="logo__link">
+                        <img src="./asset/images/T&L logo.png" alt="" class="midhead__img">
+                    </a>
+                    <nav class="midhead__nav">
+                        <ul class="midhead__list">
+                            <li class="midhead__item">
+                                <a href="./index.html" class="midhead__link">
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="midhead__item">
+                                <a href="./product1.html" class="midhead__link product__hover">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                    Sản phẩm
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="item__small">
+                                    <li class="item__small-list">
+                                        <a href="" class="item__small-link">Món ăn nổi bật</a>
+                                    </li>
+                                    <li class="item__small-list">
+                                        <a href="" class="item__small-link ">
+                                            Món ăn ưa chuộng
+                                        </a>
+                                    </li>
+                                    <li class="item__small-list">
+                                        <a href="" class="item__small-link">Món ăn mới</a>
+                                    </li>
+                                </ul>
+                            </li>
+                           
+                            <li class="midhead__item">
+                                <a href="./contact.html" class="midhead__link">
+                                    <i class="fa-solid fa-phone"></i>
+                                    Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                     <div class="midhead__cart">
+                        <a href="./cart.html" class="cart__link" title="Giỏ hàng">
+                            <i class="fa-solid fa-cart-shopping cart__icon"></i>
+                        </a>
+                        <span class="cart__count">0</span>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- cart -->
+    <main class="main">
+        <section class="main__cart">
+            <div class="grid wide">
+                <div class="main-cart__cotainer">
+                    <!-- cart header -->
+                    <div class="cart__header">
+                            <div class="row row-nowrap">
+                                <p class="main-cart__text col l-3 ">Hình ảnh</p>
+                                <p class="main-cart__text col l-3 ">Tên sản phẩm</p>
+                                <p class="main-cart__text col l-2 ">Đơn giá</p>
+                                <p class="main-cart__text col l-2 ">Số lượng</p>
+                                <p class="main-cart__text col l-2 ">Xóa</p>
+                            </div>
+                    </div>
+                    <!-- cart body -->
+                    <div class="cart__body"> 
+                            <!-- chua noi dung cart -->
+                        
+                        
+                        <!-- <div class="row">
+                            <div class="col l-2">
+                                <img src="./asset/images/product1.jpg" alt="" class="cart__img">
+                            </div>
+                            <div class="cart__body-name col l-2">
+                                <p class="cart__body-text">Bánh kem thơm ngon</p>
+                            </div>
+                            <div class="cart__body-name col l-2">
+                                <p class="cart__price">500.000đ</p>
+                            </div>
+                            <div class="cart__body-name col l-2">
+                                <input aria-label="quantity" class="cart__body-input "min="0" name ="cart__input"type="number" value="1" >
+                            </div>
+                            <div class="cart__body-name col l-2">
+                                <p class="cart__totall">500.000đ</p>
+                            </div>
+                            <div class="cart__body-name col l-2">
+                                <i class="fa-solid fa-trash-can cart__body-icon"></i>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- cart bottom -->
+                    <div class="cart__bot">
+                        <div class="row">
+                            <div class="total col l-5 l-o-6 m-6 c-6 m-0-2 c-o-3">
+                                <div class="cart__bot-total ">
+                                    <span class="cart__bot-total-name">Tổng tiền:</span> 
+                                    <span class="cart__bot-price"></span>
+                                </div>
+                            </div>
+                            <div class="col l-3 l-o-8 m-10 m-o-1 c-10 c-o-1">
+                                <p class="cart__bot-name">Tiến hành thanh toán</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- phan footer -->
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-3 l-o-1">
+                    <div class="footer__widget">
+                        <h4 class="widget__heading">Liên hệ</h4>
+                        <div class="widget__address">
+                            <i class="fa-solid fa-location-dot address__icon"></i>
+                            <span class="address__name">3/2 phường An Khánh quận Ninh Kiều TP Cần Thơ</span>
+                        </div>
+                        <div class="widget__email">
+                            <i class="fa-solid fa-envelope email__icon"></i>
+                            <span class="email__address">thienthanh17082001@gmail.com</span>
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    <i class="fa-brands fa-facebook-square footer__icon"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    <i class="fa-brands fa-instagram footer__icon"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    <i class="fa-solid fa-phone footer__icon"></i>
+                                    00998899
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col l-3 l-o-4">
+                    <div class="footer__sale">
+                        <h4 class="sale__heading">Đăng kí nhận thông tin khuyến mãi</h4>
+                        <div class="sale__info">
+                            <input type="text" class="widget__input" placeholder="Nhập email của bạn">
+                        <button class="widget__btn">Đăng kí</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="footer__copyfight">
+            <span class="copyrignt__text">© Bản quyền thuộc về T&L Cake Shop</span>
+        </div>
+</footer>
+<script src="./asset/javacript/main.js"></script>
+<script>
+    var Price=document.querySelector('.cart__bot-price')
+        
+            Price.innerText=Number(Price.innerText).toLocaleString('de-DE', {style : 'currency' , currency: 'VND'})
+</script>
+<script>
+     window.addEventListener('load',addProductToCart,false);
+     window.addEventListener('load',countProduct);
+     window.addEventListener('load',CartTotal);
+     
+</script>
+</body>
+</html>
