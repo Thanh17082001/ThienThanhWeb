@@ -1,3 +1,26 @@
+// responsive
+var overlay=document.querySelector(".rps__overlay");
+var btnList=document.querySelector('.rps__list');
+var categorys=document.querySelector('.rps__categorys')
+var btnClose=document.querySelector('.categorys__close')
+// hien thi danh sach
+btnList.addEventListener('click',function(e){
+    categorys.style.transform='translateX(0%)'
+    categorys.style.opacity='1'
+    overlay.style.display='block'
+})
+overlay.addEventListener('click',CLosed)
+// dong danh sach
+btnClose.addEventListener('click',CLosed)
+
+function CLosed(){
+    overlay.style.display='none'
+    categorys.style.transform='translateX(-100%)'
+}
+
+
+
+
 var btnNext=document.getElementsByClassName("slideshow__next");
 for(var i=0;i<btnNext.length;i++){
     btnNext[i].addEventListener("click",ClickNext);

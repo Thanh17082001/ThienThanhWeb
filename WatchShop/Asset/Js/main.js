@@ -1,6 +1,3 @@
-// count cart
-
-
 
 // responsive
 var overlay=document.querySelector(".rps__overlay");
@@ -21,9 +18,6 @@ function CLosed(){
     overlay.style.display='none'
     categorys.style.transform='translateX(-100%)'
 }
-
-
-
 
 // evaluate
 var productsEvent=document.getElementsByClassName('product');
@@ -54,16 +48,13 @@ for(var i=0;i<btnNext.length;i++){
 }
 var slidesIndex=1;
 function ClickNext(e){
-    
     var products=e.target.parentElement;
     var img=products.getElementsByClassName('product__img');
     if(slidesIndex>=img.length){
         slidesIndex=0;
-        console.log(slidesIndex+'thien')
     }
     if(slidesIndex <0){
         slidesIndex=img.length;
-        console.log(slidesIndex+'thanh')
     }
     for(var i=0;i<img.length;i++){
         img[i].style.display='none'
