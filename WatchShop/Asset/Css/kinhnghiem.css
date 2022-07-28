@@ -213,3 +213,65 @@ tr, td{
     color: red;
     text-decoration: underline;
 }
+/* responsive */
+@media (max-width: 1023px) {
+    .column-1{
+        width: 60%;
+    }
+    .column-1 .time{
+        margin: 0 50px 0 10px;
+    }
+    .column-1 .line{
+        margin-left: 50px;
+    }
+    .column-1-hr{
+        margin: 99px 0 0 60px;
+        width: 100%;
+    }
+    .timeline{
+        width: 300px;
+    }
+    .posts{
+        left: 10px;
+    }
+    .column-2{
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 729px){
+    #main{
+        display: block;
+    }
+    .column-1{
+        width: 90%;
+    }
+    .column-1 .time{
+        margin-right: 10px;
+    }
+    .footer-column-1{
+        margin: 50px 0px;
+    }
+    .footer-column-1 p{
+        display: none;
+    }
+    .column-2{
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .column-2-hr{
+        width: 100%;
+    }
+    .menu, .new-cmt{
+        display: none;
+    }
+    .new-post{
+        margin-left: 50px;
+    }
+    .post-info{
+        z-index: 1;
+        margin-left: 120px;
+        position: absolute;
+    }
+}

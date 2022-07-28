@@ -101,3 +101,30 @@ main{
 .title h3{
     margin-bottom: 15px;
 }
+/* responsive */
+@media (max-width: 1023px) {
+    .top-main-item{
+        display: block;
+        margin-bottom: 5px;
+        width: 100%;
+        text-align: center;
+    }
+    .store{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .store-info{
+        width: 100%;
+    }
+    .store-img{
+        width: 100%;
+    }
+    .bot-1-hr{
+        width: 75%;
+    }
+}
+@media (max-width: 729px) {
+    main{
+        margin: 0 5px;
+    }
+}

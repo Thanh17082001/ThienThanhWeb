@@ -179,7 +179,9 @@
 }
 /* tablet */
 @media (min-width:739px) and (max-width: 1023px){
-
+    /* .cart__count{
+        left: 90%;
+    } */
 }
 /*  Mobile */
 @media (max-width: 739px){
@@ -196,4 +198,8 @@
         width: 170px;
         margin-right: 10px;
     }
+    /* cart */
+    /* .cart__count{
+        left: 90%;
+    } */
 }
