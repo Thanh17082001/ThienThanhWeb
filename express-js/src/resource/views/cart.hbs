@@ -1,0 +1,82 @@
+{{#section 'css'}}
+    <link rel="stylesheet" href="/css/cart.css">
+{{/section}}
+ 
+ 
+<div class="container mb-4">
+    <h3 class="cart__title fs-1 text-center my-5 text-uppercase">Giỏ hàng</h3>
+    <div class="cart__content">
+        <div class="row cart__headding fw-bold">
+                <div class="col-lg-2 text-center fs-3">
+                    <span class="headding__img fs-3">Giá</span>
+                </div>
+                <div class="col-lg-4 text-center fs-3">
+                    <span class="headding__name">Tên sản phẩm</span>
+                </div>
+                <div class="col-lg-2 text-center fs-3">
+                    <span class="headding__price">Giá</span>
+                </div>
+                <div class="col-lg-2 text-center fs-3">
+                    <span class="headding__quantity">Số lượng</span>
+                </div>
+                <div class="col-lg-2 text-center fs-3">
+                    <span class="headding__delete">Xóa</span>
+                </div>
+        </div>
+        
+        <div class="cart__body">
+            {{#each displayCart}}
+            <div class="row">
+                 {{#if message}}
+                    <div class="fs-4 mt-4 alert alert-danger d-flex align-items-center" role="alert">
+                        {{message}}
+                    </div>
+                {{/if}}
+                <span id="id" hidden>{{this.id}}</span>
+                <div class="col-lg-2 text-center fs-3 h-75">
+                    <img src="{{this.img}}"
+                        alt="" class="body__img">
+                </div>
+                <div class="col-lg-4 mt-4 fs-3">
+                    <span class="body__name">{{this.name}}</span>
+                </div>
+                <div class="col-lg-2 mt-4 text-center fs-3">
+                    <span class="info__price">{{this.totalPrice}}</span>
+                </div>
+                <div  class="col-lg-2 mt-4 text-center fs-3">
+                    <a class="quanlity__cart">
+                        <span hidden id="id2">{{this.id}}</span>
+                        <input type="button" class="quanlity__change" value="-">
+                        <input type="text" class="body__quantity" value="{{this.quanlityOrder}}"min="1">
+                        <input type="button" class=" quanlity__change" value="+">
+                    </a>
+                    
+                </div>
+                <div class="col-lg-2 mt-4 text-center fs-3">
+                    <a  class="body__delete"><i class="fa-solid fa-trash"></i></a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+    </div>
+        <a href="order/history-order" class="fs-3">Xem lịch sử đặt hàng</a>
+    <form method="POST" action="/order"  class="row cart__bottom" id="infoUSer">
+        <div class="col-lg-6">
+            <h3 class="cart__note my-4 fs-1">Địa chỉ nhận hàng</h3>
+            <input type="text" class="cart__phone" placeholder="Số điện thoại" name="phone">
+            <textarea name="address" id="" rows="4" class="cart__address" placeholder="Địa chỉ nhận hàng ( cụ thể số nhà tên đường)"></textarea>
+        </div>
+        <div class="col-lg-6">
+            <div class="cart__infomation">
+                <h3 class="infomation__headding my-4 fs-1">Thông tin đơn hàng</h3>
+                <p class="info__total-price">Tổng tiền: <span id="price"></span></p>
+                <a class="btn__pay">Đặt mua các sản phẩm</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+{{#section 'js'}}
+    <script src="/javascript/cart.js"></script>
+{{/section}}

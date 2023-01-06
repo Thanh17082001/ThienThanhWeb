@@ -1,0 +1,11 @@
+<div class="container news_detail">
+    {{#each newsDetail}}
+        <div class="text-center fs-1 my-4 text-warning">{{this.name}}</div>
+        <div class="detail__contain-img text-center">
+            <img src="{{this.img}}" alt="" class="detail__img mb-5 img-thumbnail w-75">
+        </div>
+        <p class="detail__content mb-5 fs-4 text-center">
+           {{this.description}}
+        </p>
+    {{/each}}
+</div>

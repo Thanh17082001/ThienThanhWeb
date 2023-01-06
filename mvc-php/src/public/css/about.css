@@ -1,0 +1,20 @@
+body {
+    font-family: Arial;
+    color: #000;
+}
+.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 26px;
+}
+.heading {
+    font-weight: bold;
+    font-size: 20px;
+}
+p {
+    font-size: 11pt;
+}
+li *{
+    margin-bottom: 10px;
+}

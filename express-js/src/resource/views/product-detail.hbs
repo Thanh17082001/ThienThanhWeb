@@ -1,0 +1,58 @@
+{{#section 'css'}}
+    <link rel="stylesheet" href="/css/product.css">
+{{/section}}
+
+<div class="product-detail container my-5">
+        <h3 class="product__title text-uppercase text-center my-5">Chi tiết sản phẩm</h3>
+        <div class="row">
+             {{#each productsDetail}}
+            <div class="col-lg-4">
+                <img src="{{this.img}}" 
+                alt="" class="img-thumbnail detail__img p-3">
+            </div>
+            <div class="col-lg-8">
+                <div class="product__infomation">
+                    <h3 class="product__infomation-name">{{this.name}}</h3>
+                    <p class="product__infomation-price">Giá: <span id="product__price">{{this.price}}</span></p>
+                    <p class="product__infomation-size">Kích thước: <span>20 x 30 Cm</span></p>
+                    <div class="product__actions">
+                        <div class="product__infomation-quantity">
+                            <span>Số lượng</span>
+                            <input type="text" class="actions__quantity" value="1" min="1">
+                        </div>
+                        <br>
+                        <a href="../cart/?id={{this.id}}" class="actions__btn">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <!-- cung loai -->
+        <h3 class="content__title"><span>Sản phẩm cùng loại </span></h3>
+        <div class="row">
+            {{#each products}}
+            <div class="col-lg-3">
+                <div class="content__product">
+                    <a href="product/{{this.id}}" class="content__link">
+                        <div class="profuct__overlay"></div>
+                        <img src="{{this.img}}" alt="{{this.name}}" class="product__img">
+                        <span class="info__name">{{this.name}}</span>
+                        <span class="info__price">{{this.price}}</span>
+                    </a>
+                        <div class="product__info">
+                            <a href="../cart/?id={{this.id}}" class="info_btn">Them vao gio hang 
+                            </a>
+                        </div>
+                    </div>
+            </div>
+           {{/each}}
+        </div>
+    </div>
+    <script>
+        var price=document.querySelectorAll('.info__price')
+        var priceDetail=document.getElementById('product__price')
+         for (var i = 0; i < price.length; i++) {
+            price[i].innerText = Number(price[i].innerText).toLocaleString('de-DE', { style: 'currency', currency: 'VND' })
+        }
+            priceDetail.innerText = Number(priceDetail.innerText).toLocaleString('de-DE', { style: 'currency', currency: 'VND' })
+    </script>

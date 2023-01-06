@@ -1,0 +1,40 @@
+
+<div class="container my-4">
+    <h3 class="text-center my-5 active text-warning">Sản phẩm đã bị xóa hoặc đã hết (SL=0)</h3>
+    <div class="d-flex justify-content-between">
+        <a href="./show" class=" nav-link">
+            <b class=" fs-5">Quay lại</b>
+        </a>
+        <a href="./bin" class="text-danger nav-link">
+            <b class=" fs-5"> Thùng rác</b>
+        </a>
+    </div>
+    <table class="table table-striped my-5">
+    <thead class="text-danger">
+        <tr >
+        <th scope="col">###</th>
+        <th scope="col">Tên sản phẩm</th>
+        <th scope="col">Số lượng</th>
+        <th scope="col">Khôi phục</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#if itemsProducts}}
+            {{#each itemsProducts}}
+                <tr>
+                    <th scope="row"></th>
+                    <td>{{this.name}}</td>
+                    <td class="price">{{this.price}}</td>
+                    <td><a href="./restore/?id={{this.id}}" class="nav-link text-dark" id="delete-product"><i class="fa-sharp fa-solid fa-rotate-right"></i></a></td>
+                </tr>
+            {{/each}}
+        {{else}}
+              <tr class="text-center fs-4">
+                <td colspan="4">Thùng rác trống</td>
+              </tr>
+        {{/if}}
+        
+    </tbody>
+    </table>
+</div>
+

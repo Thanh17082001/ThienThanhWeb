@@ -1,0 +1,122 @@
+    {{#section 'css'}}
+        <link rel="stylesheet" href="/css/index.css">
+    {{/section}}    
+    
+    <div class="main">
+        <img class="main__banner" src="https://thanh17082001.github.io/ThienThanhWeb/CT188__Nhom08__T&L%20Cake%20Shop/asset/images2/wallpaperbetter.com_2560x1440.jpg"></img>
+        <div class="container main__content">
+            <div class="main___content-product" id="new">
+                <h3 class="content__title"><span>Sản phẩm nổi bật</span></h3>
+                <div class="row new__product">
+                    {{#each products}}
+                    <div class="col-lg-3 item">
+                        <div class="content__product">
+                            <a href="product/{{this.id}}" class="content__link">
+                                <div class="profuct__overlay"></div>
+                                <img src="{{this.img}}" alt="{{this.name}}" class="product__img">
+                                <span class="info__name">{{this.name}}</span>
+                                <span class="info__price">{{this.price}}</span>
+                            </a>
+                            <div class="product__info">
+                                <span id="id" hidden>{{this.id}}</span>
+                                <a class="info_btn">Đặt hàng</a>
+                                {{!-- href="../cart/?id={{this.id}}" --}}
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}   
+                </div>
+                <div class="btn__slide">
+                    <div class="product__previous"><i class="fa-sharp fa-solid fa-angle-left previous__icon"></i></div>
+                    <span></span>
+                    <div class="product__next"><i class="fa-sharp fa-solid fa-angle-right previous__icon"></i></div>
+                </div>
+                <div class="content__see-more text-center mb-4">
+                    <a href="/product" class="btn__seemore">Xem thêm</a>
+                </div>
+            </div>
+
+            <div class="main___content-product" id="sale">
+                <h3 class="content__title"><span>Sản phẩm sale</span></h3>
+                <div class="row new__product">
+                   {{#each products}}
+                    <div class="col-lg-3 item">
+                         <div class="content__product">
+                            <a href="product/{{this.id}}" class="content__link">
+                                <div class="profuct__overlay"></div>
+                                <img src="{{this.img}}" alt="{{this.name}}" class="product__img">
+                                <span class="info__name">{{this.name}}</span>
+                                <span class="info__price">{{this.price}}</span>
+                            </a>
+                            <div class="product__info">
+                                <a href="../cart/?id={{this.id}}" class="info_btn">Đặt hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                <div class="btn__slide">
+                    <div class="product__previous"><i class="fa-sharp fa-solid fa-angle-left previous__icon"></i></div>
+                    <span></span>
+                    <div class="product__next"><i class="fa-sharp fa-solid fa-angle-right previous__icon"></i></div>
+                </div>
+                <div class="content__see-more text-center mb-4">
+                    <a href="/product" class="btn__seemore">Xem thêm</a>
+                </div>
+            </div>
+            <div class="main___content-introduce">
+                <h3 class="content__title"><span>tiêu chí</span></h3>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="https://4gstexas.vn/media/zsgfzbxr/tc-atvstp.jpg" alt="" class="img-thumbnail">
+                        <h3 class="introduce__title h3 text-uppercase my-4 text-center">bánh chất lượng, luôn tươi mới, không chất bảo quản.</h3>
+                        <p class="introduce__description text-center fs-4">
+                            TT CAKE cam kết bánh kem được làm từ các nguyên liệu cao cấp, 
+                            nhập khẩu từ các nhà phân phối uy tín, rõ ràng. Luôn đặt VSATTP lên hàng đầu
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="https://4gstexas.vn/media/aazbstaf/untitled-1.jpg" alt="" class="img-thumbnail">
+                        <h3 class="introduce__title h3 text-uppercase my-4 text-center">Dịch vụ chuyên nghiệp</h3>
+                        <p class="introduce__description text-center fs-4">
+                            Bánh kem được làm theo mẫu yêu cầu của khách hàng, 
+                            tiệm luôn có bánh sẵn để khách mua bất kì lúc nào. Hỗ trợ giao hàng tận nơi
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="	https://4gstexas.vn/media/1p2jp5fn/nls.jpg" alt="" class="img-thumbnail">
+                        <h3 class="introduce__title h3 text-uppercase my-4 text-center">nguyên liệu sạch</h3>
+                        <p class="introduce__description text-center fs-4">
+                            Nguồn nguyên liệu được chọn lọc kĩ càng, an toàn và rõ xuất xứ từ nhà các cung cấp uy tín
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__content-introduce">
+                <h3 class="content__title"><span>giới thiệu</span></h3>
+                <div class="row my-4">
+                    <div class="col-lg-6 introduce-contain__img">
+                        <img src="	https://theme.hstatic.net/1000313040/1000406925/14/intro.png?v=1860" alt="" class="rounded">
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="text-center fs-3">
+                            Thành lập vào tháng 12/2010 từ tình yêu với những chiếc bánh, 
+                            TT Cake khởi nguồn cùng slogan “Bánh tươi mỗi ngày” và sứ mệnh xuyên suốt về mang tới những sản phẩm thơm ngon nhất. 
+                            Những năm đầu, sản phẩm chủ lực của TT Cake là bánh kem và bánh mì tươi. 
+                            Trong mỗi dịp lễ hay sinh nhật, bánh kem của TT Cake luôn là một trong những lựa chọn hàng đầu, bởi độ ngọt vừa phải, 
+                            mẫu bánh đẹp, giá thành hợp lý. Bên cạnh đó, 
+                            đồng hành mỗi ngày của khách hàng là các sản phẩm bánh mì tươi dinh dưỡng, thơm ngon.
+                        </p>
+                        <div class="text-center">
+                            <a href="/introduce" class="btn__seemore">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{{#section 'js'}}
+    <script src="/javascript/product.js"></script>
+    <script src="/javascript/index.js"></script>
+{{/section}}

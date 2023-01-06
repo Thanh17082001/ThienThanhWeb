@@ -1,0 +1,81 @@
+<div class="container mt-5 mb-5 fs-2">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+                {{#each rows}}
+                <div class="card mb-5">
+                    <div class="text-left logo p-2 px-5">
+                        <img src="/img/logo.png" width="100">
+                    </div>
+                    <div class="invoice p-5">
+                        <h5 class="fs-1 text-center">Hóa đơn</h5>
+                        <span class="font-weight-bold d-block mt-4">Khách hàng: <p class="fs-3">{{this.fullname}}</p></span>
+                        <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
+                            <table class="table table-borderless">
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="py-2">
+                                                <span class="d-block text-muted">Order Date</span>
+                                            <span>{{this.order_date}}</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="py-2">
+                                                <span class="d-block text-muted">Order No</span>
+                                            <span>{{this.id_order}}</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="py-2">
+                                                <span class="d-block text-muted">Address</span>
+                                                <span>{{this.address}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+                        </div>
+                        <div class="product border-bottom table-responsive">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr >
+                                    <th scope="col">Tên sản phẩm</th>
+                                    <th scope="col">Số lượng</th>
+                                    <th scope="col">Giá 1 SP</th>
+                                    <th scope="col">Giá Tổng</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="overflow:auto; height:300px;">
+                                    {{#each this.infos}}
+                                    <tr>
+                                    <td>{{this.name}}</td>
+                                    <td hidden id="id">{{this.id}}</td>
+                                    <td>{{this.quanlity}}</td>
+                                    <td class="price">{{this.price}}</td>
+                                    <td class="price total__price">{{this.price_order}}</td>
+                                    </tr>
+                                    {{/each}}
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <p>We will be sending shipping confirmation email when the item shipped successfully!</p>
+                        <p class="font-weight-bold mb-0">Thanks for shopping with us!</p>
+                        <span>TT cake</span>
+                    </div>
+                </div>
+                {{/each}}   
+            </div>
+        </div>
+    </div>
+<script>
+    var price=document.querySelectorAll('.price')
+    for (var i = 0; i < price.length; i++) {
+        price[i].innerText = Number(price[i].innerText).toLocaleString('de-DE', { style: 'currency', currency: 'VND' })
+    }
+
+    var totalPrice=document.querySelectorAll('.total__price');
+    console.log(totalPrice)
+</script>

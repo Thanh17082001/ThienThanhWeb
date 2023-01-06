@@ -1,0 +1,66 @@
+
+.main__banner{
+    width: 100%;
+    height: 400px;
+}
+
+/* product */
+
+.btn__new, .btn__sale{
+    font-size: 1.8rem;
+    margin-right: 10px;
+    color: #111;
+    font-weight: 500;
+    cursor: pointer;
+}
+.active{
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+
+
+.new__product{
+    overflow: hidden;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    transition:scroll linear 10s;
+}
+.btn__slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.btn__slide span{
+    margin: 0 20px;
+   
+}
+.previous__icon{
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    color: var(--primary-color);
+}
+.item{
+  
+}
+/* .new_product .item:nth-child(1){
+    transform: translate(-150%);
+}
+.new_product .item:nth-child(2){
+    transform: translate(-90%);
+}
+.new_product .item:nth-child(3){
+    transform: translate(-90%);
+}
+.new_product .item:nth-child(4){
+    transform: translate(-90%);
+}
+.new_product .item:nth-child(5){
+    transform: translate(-90%);
+}
+.new_product .item:nth-child(n+6){
+    transform: translate(-60%);
+} */

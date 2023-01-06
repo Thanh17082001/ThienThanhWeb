@@ -1,0 +1,137 @@
+body {
+    background: #f4f4f4;
+}
+#img-banner {
+    background-image: url(https://cdn.hoanghamobile.com/i/home/Uploads/2022/10/31/iphone-13-webbbb-123.png);
+    min-height: 380px;
+    margin-top: 5px;
+}
+.social-icons {
+    background: #f5f5f5 0% 0% no-repeat;
+    box-shadow: 0 4px 6px #00000029;
+    border-radius: 30px;
+    padding: 2px;
+    position: fixed;
+    top: 45%;
+    margin-left: 20px;
+    width: 50px;
+}
+.icons {
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    
+}
+ul {
+    padding: 0;
+}
+.icon-fb {
+    border: 2px solid #3c5a99;
+    color: #3c5a99;
+    padding: 3px 14px;
+}
+.icon-fb:hover {
+    color: #3c5a99;
+}
+.icon-yt {
+    border: 2px solid #f00;
+    color: #f00;
+    padding: 3px 7px;
+}
+.icon-yt:hover {
+    color: #f00;
+}
+.icon-in {
+    /* display: block; */
+    padding: 2px;
+    background: linear-gradient(50deg,#fbe18a 0%,#fcbb45 21%,#f75274 38%,#d53692 52%,#8f39ce 74%,#ad63a0 100%) 0% 0% no-repeat;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+    color: #fff;
+    padding: 4px 12px;
+}
+.icon-in:hover {
+    color: #fff;
+}
+.icon-tt {
+    border: 2px solid #000;
+    color: #000;
+    padding: 3px 10px;
+}
+.icon-tt:hover {
+    color: #000;
+}
+.social-icons ul {
+    list-style: none;
+}
+.list-item {
+    background: rgb(241, 235, 235);
+    box-shadow: 0 4px 6px #00000029;
+    border-radius: 8px;
+    padding: 50px;
+    position: relative;
+    height: 450px;
+}
+.previous-icon, .next-icon {
+    position: absolute;
+    /* width: 40px;
+    height: 40px; */
+    border-radius: 10%;
+    /* background: #e3e3e3; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.previous-icon{
+    top:50%;
+    left: 12px;
+}
+.next-icon{
+    top:50%;
+    right: 12px;
+}
+.fa-caret-left, .fa-caret-right {
+    font-size: 60px;
+}
+.item {
+    text-align: center;
+}
+.title {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+.price strong{
+    color: red;
+}
+.client-fd {
+    background: #fff;
+    box-shadow: 0 4px 6px #00000029;
+    border-radius: 8px;
+}
+.title-user, .name-user {
+    font-weight: bold;
+}
+.job-user {
+    color: #009981;
+}
+.img-user {
+    width: 100%;
+    border-radius: 5px;
+}
+.banner__img{
+    width: 100%;
+}
+.product__items{
+    height: 398px;
+    overflow: hidden;
+   
+}
+.item{
+    margin-bottom: 60px;
+    height: 100%;
+    padding-bottom: 30PX;
+}

@@ -1,0 +1,30 @@
+    <h3 class="text-center text-warning my-4">Thêm sản phẩm </h3>
+    <div class="container my-4 d-flex justify-content-center">
+        <form class="w-50" method="post" action="./create">
+            {{#if message}}
+                <div class="fs-4 mt-4 alert alert-success d-flex align-items-center" role="alert">
+                    {{message}}
+                    <a href="/admin/show" class="nav-link active"> Xem Sản phẩm</a>
+                </div>
+            {{/if}}
+            <div class="mb-3">
+                <label  class="form-label">Tên sản phẩm</label>
+                <input type="text" class="form-control" name="name" value="{{this.name}}">
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Link hình ảnh</label>
+                <input type="text" class="form-control" name="img" value="{{this.name}}">
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Số lượng sản phẩm</label>
+                <input type="text" class="form-control" name="quanlity" value="{{this.quanlity}}">
+            </div>
+
+            <div class="mb-3">
+                <label  class="form-label">Giá</label>
+                <input type="text" class="form-control" name="price" value="{{this.price}}">
+            </div>
+
+            <button type="submit" class="btn btn-lg btn-primary px-5">Thêm</button>
+        </form>
+    </div>

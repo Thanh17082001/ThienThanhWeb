@@ -1,0 +1,27 @@
+.contact__contain-img{
+    position: relative;
+}
+.contacts__icons{
+    position: absolute;
+    top: 38%;
+    left: 37%;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.contact__form{
+    background:url(https://theme.hstatic.net/1000313040/1000406925/14/banform.jpg?v=1860);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+    width: 100%;
+    margin-top: 20px;
+}
+.form__info{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    height: 100%;
+    margin-left: 40px;
+}
+.form__tittle{
+    color: var(--primary-color);
+}

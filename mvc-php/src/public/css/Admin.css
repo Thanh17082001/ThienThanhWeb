@@ -1,0 +1,13 @@
+main {
+    min-height: 500px;
+}
+.form-create {
+    padding-left: 150px;
+}
+.form-control {
+    width: 80%;
+}
+.button-edit, .button-create{
+    width: 150px;
+    text-transform: uppercase;
+}

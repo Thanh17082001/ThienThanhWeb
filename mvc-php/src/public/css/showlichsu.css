@@ -1,0 +1,15 @@
+main {
+    min-height: 500px;
+}
+.info {
+    padding-left: 150px;
+}
+.info i {
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 50%;
+}
+.show-buyed {
+    border: 1px solid #ccc;
+    padding: 20px;
+}

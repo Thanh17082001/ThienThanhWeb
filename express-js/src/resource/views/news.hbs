@@ -1,0 +1,22 @@
+{{#section 'css'}}
+        <link rel="stylesheet" href="/css/news.css">
+{{/section}}
+
+<div class="container">
+        <h2 class="fs-1 text-center my-5 text-uppercase">Tin tức</h2>
+        <div class="row">
+            {{#each news}}
+            <div class="col-lg-4 mb-3">
+                <a href="news/{{this.id}}" class="news">
+                    <div class="news__contain-img">
+                        <img src="{{this.img}}" alt="" class="news__img">
+                    </div>
+                    <h3 class="news__title">{{this.name}}</h3>
+                    <p class="news__description">
+                        {{this.description}}
+                    </p>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    </div>

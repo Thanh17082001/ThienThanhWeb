@@ -1,0 +1,140 @@
+.cart__content{
+    border: 1px solid #ccc;
+    min-height: 0;
+    padding:10px 10px;
+    margin-bottom: 20px;
+}
+.cart__headding{
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.cart__body{
+    max-height: 330px;
+    overflow-y: scroll;
+    width: 100%;
+    margin-top: 20px;
+    min-height: 0;
+}
+.body__quantity{
+    width: 50%;
+    height: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 4px;
+    padding-left: 30px;
+}
+.body__img{
+    width: 60%;
+    height: 95px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 12px;
+}
+.body__name{
+    font-size: 1.8rem;
+    color: var(--header-color);
+    font-weight: 500;
+    margin-top: 6px;
+    height: 2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    line-height: 2rem;
+}
+.body__delete i{
+    color: #111;
+    font-size: 2rem;
+    transition: transform linear 0.15s;
+}
+.body__delete:hover i{
+    transform: scale(1.3);
+}
+.cart__phone{
+    width: 100%;
+    height: 35px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    outline: none;
+}
+.cart__address{
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    min-height: 30px;
+    font-size: 1.5rem;
+}
+.cart__infomation{
+    margin-left: 30px;
+}
+.info__total-price{
+    font-size: 1.7rem;
+    color: #111;
+    font-weight: 500;
+}
+.info__total-price #price{
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+.quanlity__cart{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.quanlity__change{
+    width: 30px;
+    height: 30px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.btn__pay{
+    display:block;
+    width: 260px;
+    height: 40px;
+    border: 1.5px solid #666;
+    text-align: center;
+    line-height: 33px;
+    text-decoration: none ;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 1;
+    position: relative;
+}
+.btn__pay:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.btn__pay::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    top: -6px;
+    right: 5px;
+    transition:all linear 0.3s;
+}
+.btn__pay::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    bottom: -6px;
+    left: 5px;
+    transition: linear 0.3s;
+}
+.btn__pay:hover.btn__pay::before{
+    right: 75%;
+}
+.btn__pay:hover.btn__pay::after{
+    left: 75%;
+}

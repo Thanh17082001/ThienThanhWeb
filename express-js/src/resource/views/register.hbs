@@ -1,0 +1,48 @@
+{{#section 'css'}}
+        <link rel="stylesheet" href="/css/account.css">
+{{/section}}
+
+
+<div class="acounts container my-5">
+    <div class="account__login">
+        <div class="account__swap">
+            <a href="/login" class="swap__login ">Đăng nhập</a>
+            <span class="swap__register account__swap--active">Đăng ký</span>
+        </div>
+        {{!-- đăng ki trùng email --}}
+        {{#if message}}
+        <div class="fs-4 mt-4 alert alert-danger d-flex align-items-center" role="alert">
+            {{message}}
+        </div>
+        {{/if}}
+        <form action="/register" method="POST" class="register__form">
+            <div class="account__name">
+                <lable class="email__lable">Họ và tên</lable>
+                <input type="text" class="name__input" placeholder="Họ và tên" name="fullname">
+                <span></span>
+            </div>
+            <div class="account__email">
+                <lable class="email__lable">Email</lable>
+                <input type="email" class="email__input" placeholder="thanh@gmail.com" name="email">
+                <span></span>
+            </div>
+            <div class="account__password">
+                <lable class="pass__lable">Mật khẩu</lable>
+                <input type="password" class="pass__input" placeholder="Mật khẩu" value="" name="password">
+                <span></span>
+            </div>
+            <div class="account__password">
+                <lable class="pass__lable">Nhập lại mật khẩu</lable>
+                <input type="password" class="pass__input--retype" placeholder="nhập lại mật khẩu">
+                <span></span>
+            </div>
+            <p class="account__btn text-center">
+                <button type="submit" class="btn__submit" id="btn__register">Đăng ký</button>
+            </p>
+        </form>
+        <p class="acount__message"></p>
+    </div>
+</div>
+{{#section 'js'}}
+    <script src="/javascript/account.js"></script>
+{{/section}}

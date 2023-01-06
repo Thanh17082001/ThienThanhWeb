@@ -1,0 +1,32 @@
+{{#section 'css'}}
+        <link rel="stylesheet" href="/css/account.css">
+{{/section}}
+
+<div class="acounts container my-5">
+    <div class="account__login">
+        <div class="account__swap">
+            <span class="swap__login account__swap--active">Đăng nhập</span>
+            <a href="/register" class="swap__register">Đăng ký</a>
+        </div>
+        <form action="/login" method="POST" class="login__form">
+            <div class="account__email">
+                <lable class="email__lable">Email</lable>
+                <input type="email" class="email__input" name="email" placeholder="thanh@gmail.com">
+                <span  ></span>
+            </div>
+            <div class="account__password">
+                <lable class="pass__lable">Password</lable>
+                <input type="password" class="pass__input" name="password" placeholder="Mật khẩu">
+                <span></span>
+            </div>
+            <p class="account__btn text-center">
+                <button type="submit" class="btn__submit" id="btn__login">Đăng nhập</button>
+            </p>
+        </form>
+        <p class="acount__message"></p>
+    </div>
+</div>
+
+{{#section 'js'}}
+    <script src="/javascript/account.js"></script>
+{{/section}}

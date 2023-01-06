@@ -1,0 +1,24 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "nien luan co so",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "watch": "node-sass src/resource/scss/layout.scss src/public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ThienThanh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-handlebars-sections": "^1.0.1",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}

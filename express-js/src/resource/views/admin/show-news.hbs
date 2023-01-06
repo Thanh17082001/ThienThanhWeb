@@ -1,0 +1,21 @@
+
+<div class="container my-4">
+    <h3 class="text-center my-5 active text-warning">Các bài viết đã được đăng</h3>
+    <h4><b class=""> Tổng số bài viết:</b> <span class=" text-info">{{totalProduct}}</span></h4>
+    <table class="table table-striped my-5">
+    <thead class="text-danger fs-4">
+        <tr >
+        <th scope="col">Tên Bài viết</th>
+        </tr>
+    </thead>
+    <tbody >
+        {{#each itemsNews}}
+        <tr>
+        <td >{{this.name}}</td>
+        <td hidden id="id">{{this.id}}</td>
+        </tr>
+       {{/each}}
+    </tbody>
+    </table>
+</div>
+

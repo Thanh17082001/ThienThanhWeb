@@ -1,0 +1,69 @@
+{{#section 'css'}}
+    <link rel="stylesheet" href="/css/product.css">
+{{/section}}
+
+
+<div class="product my-5 row w-100%">
+    <h2 class="product__title text-uppercase text-center my-5">Tất cả sản phẩm</h2>
+    <div class="col-lg-2">        
+        <div class="product__category ms-1">
+            <div class="category__name">Danh mục</div>
+            <ul class="category__list">
+                <li class="category__item">
+                    <a href="" class="category__link">Bánh kem sinh nhật</a>
+                </li>
+                <li class="category__item">
+                    <a href="" class="category__link">Bánh kem sự kiện</a>
+                </li>
+                <li class="category__item">
+                    <a href="" class="category__link">Phụ kiện đi kèm</a>
+                </li>
+            </ul>
+        </div>
+    </div>       
+    <div class="col-lg-10 product__body">
+        <div class="product__options">
+            <div class="options__sort">
+                <div class="options__name">
+                    <label class="mx-5 fs-4">Sắp xếp theo</label>
+                </div>
+                <select class="options__select">
+                    <option >Lựa chọn...</option>
+                    <option value="1">A-Z</option>
+                    <option value="2">Giá tăng dần</option>
+                    <option value="3">Giá giảm dần</option>
+                </select>
+                </div>
+        </div>
+        <div class="row my-4">
+            {{#each products}}
+                <div class="col-lg-3"> 
+                    <div class="content__product">
+                        
+                    <a href="product/{{this.id}}" class="content__link">
+                        <div class="profuct__overlay"></div>
+                        <img src="{{this.img}}" alt="{{this.name}}" class="product__img">
+                        <span class="info__name">{{this.name}}</span>
+                        <span class="info__price">{{this.price}}</span>
+                    </a>
+                        <div class="product__info">
+                            <span id="id" hidden>{{this.id}}</span>
+                            <a  class="info_btn">Đặt hàng</a>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="product__pages">
+        <a href="" class="pages__link pages__link--active">1</a>
+        <a href="" class="pages__link">2</a>
+        <a href="" class="pages__link material-symbols-outlined">
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+    
+{{#section 'js'}}
+    <script src="/javascript/product.js"></script>
+{{/section}}

@@ -1,0 +1,39 @@
+
+<div class="container my-4">
+    <h3 class="text-center my-5 active text-warning">Thông tin các sản phẩm của cửa hàng</h3>
+    <div class="d-flex justify-content-between">
+        <h4><b class=" fs-5"> Tổng số hàng hóa:</b> <span class=" text-info">{{totalProduct}}</span></h4>
+        <a href="./bin" class="text-danger nav-link me-4">
+            <b class=" fs-5"> Thùng rác</b>
+        </a>
+    </div>
+    <table class="table table-striped my-5">
+    <thead class="text-danger">
+        <tr >
+        <th scope="col">###</th>
+        <th scope="col">Tên sản phẩm</th>
+        <th scope="col">Số lượng</th>
+        <th scope="col">Giá</th>
+        <th scope="col">Xóa</th>
+        <th scope="col">Sửa</th>
+        </tr>
+    </thead>
+    <tbody style="overflow:auto; height:300px;">
+        {{#each itemsProducts}}
+        <tr>
+        <th scope="row"></th>
+        <td>{{this.name}}</td>
+        <td hidden id="id">{{this.id}}</td>
+        <td>{{this.quanlity}}</td>
+        <td class="price">{{this.price}}</td>
+        <td><a href="" class="nav-link text-dark" id="delete-product"><i class="fa-solid fa-trash"></i></a></td>
+        <td><a href="./edit/?id={{this.id}}" class="nav-link text-dark"><i class="fa-solid fa-pen-to-square"></i></a></td>
+        </tr>
+       {{/each}}
+    </tbody>
+    </table>
+</div>
+
+{{#section 'js'}}
+    <script src="/javascript/admin.js"></script>
+{{/section}}

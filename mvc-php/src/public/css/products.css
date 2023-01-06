@@ -1,0 +1,32 @@
+body {
+    background: #f4f4f4;
+}
+main {
+    min-height: 550px;
+}
+.form-select {
+    width: 200px;
+}
+.item {
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.title {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+.price strong{
+    color: red;
+}
+.add-to-cart {
+    text-transform: uppercase;
+    padding: 1px 7px;
+    border-radius: 4px;
+    background: rgb(0, 72, 61);
+    color: #fff;
+    font-weight: bold;
+}

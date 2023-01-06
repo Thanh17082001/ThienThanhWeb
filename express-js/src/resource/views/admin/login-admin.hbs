@@ -1,0 +1,25 @@
+<head>
+    <style>
+        .header{
+            display: none;
+        }
+        .footer{
+            display: none;
+        }
+    </style>
+</head>
+
+<div class="container">
+    <h2 class="text-center fs-1 my-4">Đăng nhập để vào trang Admin</h2>
+    <form class="fs-1" action="/admin/login" method="POST">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input  type="email" name="email" class="form-control fs-2">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control fs-2" name="password">
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary">Đăng nhập admin</button>
+    </form>
+</div>

@@ -1,0 +1,43 @@
+
+<div class="container"> 
+    <h1 class="text-center fs-1 my-4 text-info">ĐƠN HÀNG ĐÃ ĐẶT</h1>
+
+    {{#each orders}}
+    <div class="row mb-5">
+        <hr style="width:100%;text-align:left;margin-left:0;height:3px; color:blue;">  
+        <div class="col-lg-3">
+            <h2 class="fs-3 text-warning">Thông tin người đặt</h2>
+            <p class="">Họ và tên: {{this.fullname}}</p>
+            <p class="">Địa chỉ: {{this.address}}</p>
+            <p class="">Mã đơn hàng: {{this.id_order}}</p>
+        </div>
+        <div class="col-lg-9">
+            <h2 class="text-warning fs-3 text-center">Các mặt hàng</h2>
+            <table class="table fs-4">
+                <thead>
+                    <tr>
+                    <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">Số lượng</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Tổng giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each this.infos}}
+                    <tr>
+                    <td>{{this.name}}</td>
+                    <td>{{this.quanlity}}</td>
+                    <td>{{this.price}}</td>
+                    <td>{{this.price_order}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+           
+        </div>
+     <hr style="width:100%;text-align:left;margin-left:0;height:3px; color:blue;">  
+    </div>
+    {{/each}}
+   
+
+</div>
