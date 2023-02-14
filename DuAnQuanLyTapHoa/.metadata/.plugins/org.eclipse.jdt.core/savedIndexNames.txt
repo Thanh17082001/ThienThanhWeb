@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Lenovo\Documents\Quan_Tri_DL\CT467\.metadata\.plugins\org.eclipse.jdt.core
+1210658807.index
+825599491.index
+23425866.index

@@ -1,0 +1,47 @@
+package doan;
+
+import java.util.Scanner;
+
+public class SDSql {
+
+	public static void main(String[] args) {
+		Sql a=new Sql();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Moi ban chon chuc nang: ");
+		while(true) {
+			System.out.println("1. Xem hang hoa cua tiem:");
+			System.out.println("2. Thanh toan hoa don:");
+			System.out.println("3. Nhap hang vao kho:");
+			System.out.println("4. Kiem tra so luong hang hoa:");
+			System.out.println("5. Thong ke doanh thu theo thang:");
+			System.out.println("6. Thong ke doanh thu theo ngay:");
+			System.out.println("7. Xem noi san xuat san pham:");
+			 int lc=sc.nextInt(); sc.nextLine();
+			 if(lc==1) {
+				 a.XemSp();
+			 }
+			 else if(lc==2){
+				 a.nhapBill();
+			 }
+			 else if(lc==3) {
+				 a.nhaphang();
+			 }
+			 else if(lc==4){
+				 System.out.println("Nhap ma hang can kiem tra: "); String mahang=sc.nextLine();
+				 a.KTsoluong(mahang);
+			 }
+			 else if(lc==5){
+				 a.DTMonth();
+			 }
+			 else if(lc==6){
+				 a.DTDay();
+			 }
+			 else if(lc==7){
+				 a.xuatxu();
+			 }
+			 System.out.println("\n");
+		}
+		
+		
+	}
+}
